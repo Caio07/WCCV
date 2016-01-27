@@ -14,20 +14,165 @@
 }
 
 body {
+    background-color: #fff;
+    color: #fff;
     font-family: 'Open Sans', sans-serif;
     /*font-size: 62.5%;*/
-    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 100px;
+    height: 100%;
+
+}
+
+a {
+
+    text-decoration: underline;
+    font-weight: 700; 
+    color: #fff;
+
+}
+
+footer{
+
+    background-color: #0090d0;
+    margin-bottom: 20px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
+
 
 .container {
   width: 960px;
 }
 
 
+#home,#what-we-do,#members,#donate,#contact{
+
+  padding-top: 20px;
+}
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+nav{
+
+  background-color: #fff;
+  text-transform: uppercase; 
+  height: 100px;
+
+}
+
+  nav .navbar-nav{
+
+  margin-top: 30px;
+
+  }
+
+  nav .navbar-nav li a{
+
+      text-decoration: none;
+      color: #3c3c3c;
+      font-weight: 400;
+  }
+
+
+/* ==========================================================================
+   Home
+   ========================================================================== */
+
+#home{
+
+  background-image: url("../img/bg-home.jpg");
+  background-size: 100% 100%,cover;
+  background-position: top left, bottom center;
+  background-repeat:no-repeat;
+  height: 720px;
+
+}
+
+
+/* ==========================================================================
+   The WCCV
+   ========================================================================== */
+
+#the-wccv{
+  
+  background-image: url("../img/bg-who-we-are.jpg");
+  background-size: 100% 100%,cover;
+  background-position: top left, bottom center;
+  background-repeat:no-repeat;
+  height: 720px;
+    
+
+}
+
+.who-we-are-header{
+
+  background-color: #5fb158;
+  color: #fff;
+  font-weight: 800;
+  height: 80px;
+  width: 100%;
+  text-transform: uppercase; 
+  display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+  #the-wccv > .container{
+
+  padding-top: 20px;    
+  }
 
 
 
+/* ==========================================================================
+   What We do
+   ========================================================================== */
+
+#what-we-do{
+
+  background-image: url("../img/bg-what-we-do.jpg");
+  background-size: 100% 100%,cover;
+  background-position: top left, bottom center;
+  background-repeat:no-repeat;
+  height: 100%;
+
+}
+
+/* ==========================================================================
+   Members
+   ========================================================================== */
+
+#members{
+
+  color: #000;
+
+}
+
+/* ==========================================================================
+   Donate
+   ========================================================================== */
+
+#donate{
+
+  background-image: url("../img/bg-donate.jpg");
+  background-size: 100% 100%,cover;
+  background-position: top left, bottom center;
+  background-repeat:no-repeat;
+  height: 100%;
+
+}   
+
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+
+#contact{
+
+  color: #5f5f5f;
+}
 
 /* ==========================================================================
    Media Queries
