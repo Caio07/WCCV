@@ -18,7 +18,7 @@ body {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 20px;
-    padding-top: 80px;
+    padding-top: 70px;
     height: 100%;
 
 }
@@ -70,7 +70,7 @@ nav{
 
   nav .navbar-brand{
 
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   nav .navbar-nav{
@@ -79,7 +79,7 @@ nav{
 
 }
 
-li~li { 
+nav li~li { 
 
   border-left: 1px solid #c7c7c7; 
 }
@@ -95,6 +95,7 @@ li~li {
           color: #3c3c3c;
           font-weight: 400;
           font-size: 1em;
+
 }
 
         nav .navbar-nav li a:hover{
@@ -167,7 +168,7 @@ li~li {
       
       background-color: #68c261;
       padding: 20px;
-      text-align: right;
+      text-align: center;
       -webkit-box-shadow: 0px 3px 0px 0px rgba(96,179,89,1);
       -moz-box-shadow: 0px 3px 0px 0px rgba(96,179,89,1);
       box-shadow: 0px 3px 0px 0px rgba(96,179,89,1);
@@ -201,7 +202,7 @@ li~li {
 
   background-color: #5fb158;
   color: #fff;
-  height: 80px;
+  height: 120px;
   width: 100%;
   text-transform: uppercase; 
   display:flex;
@@ -213,6 +214,7 @@ li~li {
   .who-we-are-header h1{
 
      font-weight: 700;
+     padding: 10px 50px;
   }
   
   #the-wccv .row{
@@ -224,6 +226,29 @@ li~li {
 
   padding-top: 50px;
   }
+
+  #the-wccv .outlinebox{
+
+    display: block;
+
+  }
+
+
+    #the-wccv ul{
+
+    list-style-type: none;
+
+  }
+
+      #the-wccv ul li{
+
+    margin-top: 30px;
+
+  }
+
+
+
+ 
 
 /* ==========================================================================
    Where We are
