@@ -17,9 +17,8 @@ body {
     background-color: #fff;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
-    /*font-size: 62.5%;*/
     padding-bottom: 20px;
-    padding-top: 100px;
+    padding-top: 80px;
     height: 100%;
 
 }
@@ -46,7 +45,7 @@ footer{
 }
 
 
-#home,#what-we-do,#members,#donate,#contact{
+#what-we-do,#members,#donate,#contact{
 
   padding-top: 20px;
 }
@@ -65,18 +64,29 @@ nav{
 
   background-color: #fff;
   text-transform: uppercase; 
-  height: 100px;
+  height: 70px;
 
 }
+
+  nav .navbar-brand{
+
+    padding: 10px 0;
+  }
 
   nav .navbar-nav{
 
-  margin-top: 30px;
+  margin-top: 15px;
 
 }
+
+li~li { 
+
+  border-left: 1px solid #c7c7c7; 
+}
+
     nav .navbar-nav li{
 
-        margin: 0 20px;
+        padding: 0 25px;
 }
 
       nav .navbar-nav li a{
@@ -84,6 +94,7 @@ nav{
           text-decoration: none;
           color: #3c3c3c;
           font-weight: 400;
+          font-size: 1em;
 }
 
         nav .navbar-nav li a:hover{
