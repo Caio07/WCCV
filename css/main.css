@@ -124,8 +124,8 @@ nav li~li {
   .box-home-left{
 
     position: absolute;
-    top: 5%;
-    width: 35%;
+    top: 20px;
+    max-width: 35%;
   }
 
   .box-home-left h1{
@@ -147,9 +147,9 @@ nav li~li {
 
     color: #3c3c3c;
     position: absolute;
-    bottom: 20%;
-    right: 25%;
-    width: 20%;
+    bottom: 100px;
+    right: 350px;
+    max-width: 20%;
   }
 
     .box-home-right h2{
