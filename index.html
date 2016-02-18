@@ -37,6 +37,7 @@
 
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -117,8 +118,10 @@
     </div>
     <div id="where-we-are">
       <div class="container">
-        <h1 class="text-center"> Where we are </h1>
-          <div class="row">
+      <header>
+        <h1 class="text-center outlined-box"> Where we are </h1>
+      </header>
+          <div class="row box-where-we-are">
             <div class="col-md-6">
               <p>Our headquarters are located at Kyangwali Refugee Camp, in the Hoima district, in Uganda.</p>
               <p>We are 287km to the northwest of the capital, Kampala.</p>
@@ -133,20 +136,24 @@
             </div>
           </div>
         <div class="row">
-          <div class="col-md-12 outlined-box">
-            <p>Data From: http://www.independent.co.ug/index.php/features/features/42-features/3516-kyangwali-refugee-camp-between-hope-and-despair#sthash.ep36UpJJ.dpuf</p>
+          <div class="col-md-12 box-data">
+            <p class="outlined-box">Data From: <br/> http://www.independent.co.ug/index.php/features/features/42-features/3516-kyangwali-refugee-camp-between-hope-and-despair#sthash.ep36UpJJ.dpuf</p>
           </div>  
         </div>
       </div>
-      <p> Google Maps </p>
+      <div class="row box-map">
+        <div class="col-md-12 col-xs-12" id="gmap_canvas"/>
+      </div>
     </div>
 
     <!-- What We Do -->
     <div id="what-we-do">
       <div class="container">
+      <header>
         <h1 class="text-center outlined-box">What We do</h1>
-        <p><strong>Vision:</strong>A healthy child that is economically and socially empowered through education and skills.</p>
-        <p><strong>Mission</strong>: To facilitate the children’s access to health care and sustainable life through provision of knowledge and skills.</p>
+      </header>
+        <p><strong>Vision:</strong> A healthy child that is economically and socially empowered through education and skills.</p>
+        <p><strong>Mission:</strong> To facilitate the children’s access to health care and sustainable life through provision of knowledge and skills.</p>
         <p><strong>Values:</strong> Diversity, Excellence, Love, Honesty, Humanity, Integrity and Commitment.</p>
           <strong>Acting and objectives</strong><br/>
           <p>Our goals are to provide education, health, prevent HIV/AIDS and SGBV. We care mainly for orphans and poor children who suffer with civil war and the bad living conditions of the area, but we also pay attention to widows, the elderly, the homeless and people with disabilities. <p/>
@@ -163,7 +170,7 @@
             </ol>
           </div>
           <div class="col-md-4">
-            <ol>
+            <ol start="5">
               <li> Create awareness about health promotion through the training of educators to teach people.</li>
               <li> Create love, peace and unity in society,  aiming to create a one world family with no limits. </li>
               <li> Support disability, teaching people how to be self reliant.</li>
@@ -171,7 +178,7 @@
             </ol>
           </div>
           <div class="col-md-4">
-            <ol>
+            <ol start="9">
               <li> Prevent malaria, offering proper medication and giving protection to the community.</li>
               <li> To support mothers by equipping them with skills and knowledge for self-reliance. </li>
               <li> To connect needy children to existing livelihood interventions.</li>
@@ -180,16 +187,18 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <h3 class="text-center outlined-box">Our plans in every field of action are:</h3>
+            <header>
+              <h3 class="text-center outlined-box">Our plans in every field of action are:</h3>
+            </header>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 plans-box-blue">
+        <div class="box-table">
+          <div class="plans-box-blue">
             <img src="img/icon-education.png" class="img-responsive center-block"/>
             <h2 class="text-center box-title">Education</h2>
             <p>Nursery School with 3 classrooms. For that, we’ll need to build a house big enough. We’ll also need proper tables, chairs, blackboard and chalk. We’ll have 3 teachers to whom we’ll pay a proper salary.For the elementary school, we’re planning to build 7 classrooms, for 30 students each, meaning more desks and chairs.Also, we’ll need uniforms, books and lunch for all the kids.We’ll have arts and crafting classes, teaching how to make shoes, belts, clothes and furniture, so they can have a proper job, so we’ll need every material related to these.</p>
           </div>
-          <div class="col-md-6 plans-box-white">
+          <div class="plans-box-white">
             <img src="img/icon-health.png" class="img-responsive center-block"/>
             <h2 class="text-center box-title">Health, HIV-AIDS and SGBV</h2>
             <p>We plan to create a health center where our children will be treated for free and will give support to the primary healthcare of the community. We’ll have nutritional services, assisting malnourished children with supplementary feeding.We plan to do a door-to-door survey four times per year in search of children suffering with malaria, anemia, checking their vaccination and nutritional status.We shall create awareness about HIV-AIDS and we’ll monitor the sanitation condition child to child, promoting conferences at schools and in the community, since there is a high number of kids and adults who are HIV positive.We’ll talk about SGBV in schools so the kids can grow up knowing that these troubles are obstacles for the community development and for living in Peace.We’ll organize free HIV tests, to check for the virus.Also we will give proper medication, health education and provision of insecticide treated nets, to fight malaria and cholera.
@@ -197,15 +206,15 @@
             And we will promote health awareness through the training of educators, to help society.</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6 plans-box-white">
+        <div class="box-table">
+          <div class="plans-box-white">
             <img src="img/icon-children-right.png" class="img-responsive center-block"/>
             <h2 class="text-center box-title">Defend children’s rights <br/> in the world</h2>
             <p>Defending their rights mean we will respect all the children rights in the world, and if someone break it, we will defend it in justice.
               We will work on emergencies when needed. During wars, natural disasters and diseases affecting young people. Whenever a kid might be in danger, we will be there.
             </p>
           </div>
-          <div class="col-md-6 plans-box-blue">
+          <div class="plans-box-blue">
             <img src="img/icon-care-for-orphans.png" class="img-responsive center-block"/>
             <h2 class="text-center box-title">Care for orphans, widows, elders, homeless and disabled people</h2>
             <p>For the orphans, we are planning to build an orphanage, where the children will be staying,eating, playing, sleeping, and having all the equipment for entertainment.For widows and the disabled we will be giving proper skills so they can support themselves, giving them a starting point to rebuild their lives.
@@ -218,7 +227,9 @@
     <!-- Members -->
     <div id="members">
       <div class="container">
+      <header>
         <h1 class="text-center"> Our Team </h1>
+      </header>
         <div class="profile">
           <img src="#"/ class="profile-photo">
           <span class="profile-name">Akeem Kafumba</span>
@@ -378,7 +389,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-
         <script src="js/main.js"></script>
     </body>
 </html>

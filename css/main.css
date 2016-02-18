@@ -9,6 +9,7 @@
 *{
  margin: 0; 
  padding: 0; 
+ -webkit-box-sizing: border-box;
  -moz-box-sizing: border-box;
  box-sizing: border-box; 
 }
@@ -44,6 +45,15 @@ footer{
   width: 960px;
 }
 
+header{
+
+   display:flex;
+      align-items: center;
+      justify-content: center;
+
+}
+
+
 
 #what-we-do,#members,#donate,#contact{
 
@@ -52,7 +62,7 @@ footer{
 
 .outlined-box{
 
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
   padding: 10px;
 }
 
@@ -205,9 +215,6 @@ nav li~li {
   height: 120px;
   width: 100%;
   text-transform: uppercase; 
-  display:flex;
-    align-items: center;
-    justify-content: center;
 
 }
   
@@ -259,25 +266,58 @@ nav li~li {
   background-image: url("../img/bg-where-we-are.jpg");
   background-size: 100% 100%,cover;
   background-repeat:no-repeat;
-  height: 720px;
+  height: 650px;
   margin-top: 0;
+  font-size: 0.8em;
     
 }
+
 
 #where-we-are h1{
 
      font-weight: 700;
+     padding-right: 40px;
+     padding-left: 40px;
+    
   }
 
-#where-we-are .row{
+#where-we-are .box-data{
 
-     padding: 0 150px;
+  font-size: 0.7em;
+  font-weight: 600;
+  margin-top: 10px;
+  display:flex;
+      align-items: center;
+      justify-content: center;
+
+}
+
+#where-we-are .box-where-we-are{
+
+     padding: 20px 150px;
   }
 
 #where-we-are > .container{
 
   padding-top: 100px;
   }
+
+.box-map{
+
+  margin-top: 20px;
+}
+
+#gmap_canvas{
+  margin: 0;
+  padding: 0;
+  height: 400px;
+  width: 100%;
+  max-width: none;
+}
+#map-canvas img {
+  max-width: none !important;
+  background:none!important
+}
 
 /* ==========================================================================
    What We do
@@ -289,7 +329,8 @@ nav li~li {
   background-size: 100% 100%,cover;
   background-position: top left, bottom center;
   background-repeat:no-repeat;
-  height: 100%;
+  height: auto;
+  font-size: 1.3em;
 
 }
 
@@ -300,14 +341,19 @@ nav li~li {
 
   #what-we-do .box-title{
 
-    font-size: 24px;
+    font-size: 1.5em;
 
   }
 
+.box-table{
+
+  display: flex;
+}
 
 .plans-box-white,.plans-box-blue{
 
    padding: 20px 50px;
+   flex: 1;
 }
 
 
