@@ -26,3 +26,51 @@ function init_map(){
 
 
 		google.maps.event.addDomListener(window, 'load', init_map);
+
+/* Our Team */
+
+var main = function() {
+
+  
+  $('.arrow-next').click(function() {
+    var currentSlide = $('.active-profile');
+    var nextSlide = currentSlide.next();
+
+    var currentDot = $('.active-dot');
+    var nextDot = currentDot.next();
+
+    if(nextSlide.length === 0) {
+      nextSlide = $('.profile').first();
+      nextDot = $('.dot').first();
+    }
+    
+    currentSlide.fadeOut(600).removeClass('active-profile');
+    nextSlide.fadeIn(600).addClass('active-profile');
+
+    currentDot.removeClass('active-dot');
+    nextDot.addClass('active-dot');
+  });
+
+
+  $('.arrow-prev').click(function() {
+    var currentSlide = $('.active-profile');
+    var prevSlide = currentSlide.prev();
+
+    var currentDot = $('.active-profile');
+    var prevDot = currentDot.prev();
+
+    if(prevSlide.length === 0) {
+      prevSlide = $('.profile').last();
+      prevDot = $('.dot').last();
+    }
+    
+    currentSlide.fadeOut(600).removeClass('active-profile');
+    prevSlide.fadeIn(600).addClass('active-profile');
+
+    currentDot.removeClass('active-dot');
+    prevDot.addClass('active-dot');
+  });
+
+}
+
+$(document).ready(main);

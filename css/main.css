@@ -57,7 +57,7 @@ header{
 
 #what-we-do,#members,#donate,#contact{
 
-  padding-top: 20px;
+  padding-top: 70px;
 }
 
 .outlined-box{
@@ -66,6 +66,11 @@ header{
   padding: 10px;
 }
 
+.outlined-box-gray{
+
+  outline: 1px solid #cccccc;
+  padding: 10px;
+}
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -214,7 +219,7 @@ nav li~li {
   color: #fff;
   height: 120px;
   width: 100%;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 
 }
   
@@ -381,6 +386,71 @@ nav li~li {
 
 }
 
+  #members h1{
+
+    color: #cccccc;
+  }
+
+
+.profile{
+
+  display: none;
+  padding-top: 20px;
+
+
+}
+
+.active-profile{
+
+  display: block;
+}
+
+.profile-name{
+
+  color: #0090d0;
+  font-weight: 600;
+}
+
+.profile-photo{
+
+ /* border: 1px solid #000;
+  border-collapse: separate;
+  border-spacing: 10px 10px;*/
+  border-radius: 50%;
+
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slider-dots li {
+  color: #ccc;
+  display: inline;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+  color: #0090d0;
+}
 /* ==========================================================================
    Donate
    ========================================================================== */
