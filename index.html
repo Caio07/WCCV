@@ -370,27 +370,33 @@
     <!-- Contact -->
     <div id="contact">
       <div class="container">
-        <h1 class="text-center"> Contact </h1>
-        <p>Any doubts? Want to send us a message?
+      <header>
+        <h1 class="text-center outlined-box-gray"> Contact </h1>
+      </header>
+        <p>Any doubts? Want to send us a message?<br/>
           You can talk to us here, check our updates in facebook or send us an e-mail</p>
         <form id="contact-form">
-            Name:<br/>
+            <strong>Name:</strong><br/>
             <input type="text" name="name"><br>
-            Your email:<br/>
+            <strong>Your email:</strong><br/>
             <input type="email" name="email"><br><br>
             <div class="row">
               <div class="col-md-6">
                 <textarea rows="4" cols="50" name="message" form="contact-form">
-                  Your Message</textarea>
+                </textarea>
               </div>
               <div class="col-md-6">
-                <img src="#" alt="facebook">
-                <a href="https://www.facebook.com/World-Child-Care-Vision-933782769979780/" target="_blank">facebook.com/wccv</a>
-                <img src="#" alt="email">
-                <a href="mailto:talk.to.wccv@gmail.com">talk.to.wccv@gmail.com</a>
+                <div class="social-contact">
+                  <img src="img/icon-face-gray.png" alt="facebook">
+                  <a href="https://www.facebook.com/World-Child-Care-Vision-933782769979780/" target="_blank">facebook.com/wccv</a>
+                </div>
+                <div class="social-contact">
+                  <img src="img/icon-mail-gray.png" alt="email">
+                  <a href="mailto:talk.to.wccv@gmail.com">talk.to.wccv@gmail.com</a>
+                </div>
               </div>
             </div>
-            <input type="submit" name="submit" value="Send">
+            <input id="enviar" type="submit" name="submit" value="Send">
         </form>
       </div>
     </div>
@@ -399,26 +405,30 @@
       <footer>
         <div class="container">
           <div class="row">
-            <div class="col-md-3">
-              <p>World Child Care Vision</p>
+            <div class="col-md-3 footer-brand">
+              <p class="text-center"><strong>World Child Care Vision</strong></p>
             </div>
-            <div class="col-md-3">
-              <p>Kyangwali Refugee Camp Hoima district – Uganda
-              +256788781305
-              </p>
+            <div class="col-md-4 footer-location">
+              <div>
+                <img src="img/icon-location.png" class="text-center">
+                <span>Kyangwali Refugee Camp Hoima district – Uganda</span>
+              </div>
+              <div>
+                <img src="img/icon-cel.png">
+                <span>+256788781305</span>
+              </div>
             </div>
-            <div class="col-md-3">
-              <a href="https://www.facebook.com/World-Child-Care-Vision-933782769979780/" target="_blank"><img src="#" alt="facebook">Facebook</a>
-              <a href="mailto:talk.to.wccv@gmail.com"><img src="#"></a>
+            <div class="col-md-3 footer-social text-center">
+              <a href="https://www.facebook.com/World-Child-Care-Vision-933782769979780/" target="_blank"><img src="img/thumb-face.png" alt="facebook"></a>
+              <a href="mailto:talk.to.wccv@gmail.com"><img src="img/thumb-mail.png"></a>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2 footer-donate">
               <a href="#donate">Donate</a>
             </div>
           </div>
         </div>
-
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
