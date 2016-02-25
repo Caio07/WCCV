@@ -74,3 +74,64 @@ var main = function() {
 }
 
 $(document).ready(main);
+
+
+/* Active state on menu and fade */
+
+// Cache selectors
+var lastId,
+    topMenu = $("#navbar"),
+    topMenuHeight = topMenu.outerHeight(),
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    }),
+    noScrollAction = false;
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+    var href = $(this).attr("href"),
+        offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+    noScrollAction = true;
+    menuItems
+        .parent().removeClass("active")
+        .end().filter("[href=" + href +"]").parent().addClass("active");
+    $('html, body').stop().animate({ 
+        scrollTop: offsetTop
+    },{
+        duration: 1000,
+        complete: function() {
+            setTimeout(function(){ noScrollAction = false; }, 10);
+        }
+    });
+    e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+   if(!noScrollAction){
+       // Get container scroll position
+       var fromTop = $(this).scrollTop()+topMenuHeight;
+       
+       // Get id of current scroll item
+       var cur = scrollItems.map(function(){
+         if ($(this).offset().top < fromTop)
+           return this;
+       });
+       // Get the id of the current element
+       cur = cur[cur.length-1];
+       var id = cur && cur.length ? cur[0].id : "";
+       
+       if (lastId !== id) {
+           lastId = id;
+           // Set/remove active class
+           menuItems
+             .parent().removeClass("active")
+             .end().filter("[href=#"+id+"]").parent().addClass("active");
+       }
+   }    
+});

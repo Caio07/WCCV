@@ -117,9 +117,27 @@ nav li~li {
 
         nav .navbar-nav li a:hover{
 
-        background-color: #fff;
-        border-bottom: 3px solid #008ecf;
+        background: #fff;
+        
 }
+
+        nav .navbar-nav li a:active{
+
+        background: #fff;
+        
+}
+
+
+        nav .navbar-nav li a:visited{
+
+        background: #fff;
+        
+}
+
+
+        nav #navbar li.active a {
+            border-bottom: 3px solid #008ecf;
+        }
 
 
 
