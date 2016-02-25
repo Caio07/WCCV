@@ -17,10 +17,12 @@
 body {
     background-color: #fff;
     color: #fff;
+    font-size: 100%;
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 20px;
     padding-top: 70px;
     height: 100%;
+
 
 }
 
@@ -48,16 +50,16 @@ footer{
 header{
 
    display:flex;
-      align-items: center;
-      justify-content: center;
+   align-items: center;
+   justify-content: center;
 
 }
 
 
 
-#what-we-do,#members,#donate,#contact{
+#the-wccv-content, #what-we-do,#members,#donate,#contact{
 
-  padding-top: 70px;
+  padding-top: 80px;
 }
 
 .outlined-box{
@@ -109,7 +111,7 @@ nav li~li {
           text-decoration: none;
           color: #3c3c3c;
           font-weight: 400;
-          font-size: 1em;
+          font-size: 1.5em;
 
 }
 
@@ -133,6 +135,7 @@ nav li~li {
   background-repeat:no-repeat;
   height: 620px;
   position: relative;
+  padding-bottom: 70px;
 
 }
 
@@ -175,7 +178,7 @@ nav li~li {
 
     .box-home-right p{
 
-      font-size: 1em;
+      font-size: 1.5em;
     }
 
     .box-home-right .btn-donate{
@@ -194,7 +197,7 @@ nav li~li {
       .box-home-right .btn-donate a{
 
         text-decoration: none;
-        font-size: 1.8em;
+        font-size: 2.5em;
 
       }
 
@@ -202,13 +205,16 @@ nav li~li {
    The WCCV
    ========================================================================== */
 
-#the-wccv{
+
+#the-wccv-content{
   
   background-image: url("../img/bg-who-we-are.jpg");
-  background-size: 100% 100%,cover;
+  background-size: 100%;
   background-position: top left, bottom center;
   background-repeat:no-repeat;
-  height: 620px;
+  padding-bottom: 30px;
+  height: auto;
+  font-size: 1.5em;
     
 
 }
@@ -229,38 +235,35 @@ nav li~li {
      padding: 10px 50px;
   }
   
-  #the-wccv .row{
+  #the-wccv-content .row{
 
-     padding: 0 100px;
+     padding: 0 150px;
   }
 
-  #the-wccv > .container{
+  #the-wccv-content > .container{
 
   padding-top: 50px;
   }
 
-  #the-wccv .outlinebox{
+  #the-wccv-content .outlinebox{
 
     display: block;
 
   }
 
 
-    #the-wccv ul{
+    #the-wccv-content ul{
 
     list-style-type: none;
 
   }
 
-      #the-wccv ul li{
+      #the-wccv-content ul li{
 
     margin-top: 30px;
 
   }
 
-
-
- 
 
 /* ==========================================================================
    Where We are
@@ -269,11 +272,12 @@ nav li~li {
 #where-we-are{
   
   background-image: url("../img/bg-where-we-are.jpg");
-  background-size: 100% 100%,cover;
+  background-size: 100%;
   background-repeat:no-repeat;
-  height: 950px;
+  height: auto;
   margin-top: 0;
-  font-size: 1em;
+  font-size: 1.4em;
+  padding-bottom: 80px;
     
 }
 
@@ -288,7 +292,7 @@ nav li~li {
 
 #where-we-are .box-data{
 
-  font-size: 0.7em;
+  font-size: 0.6em;
   font-weight: 600;
   display:flex;
       align-items: center;
@@ -298,7 +302,9 @@ nav li~li {
 
 #where-we-are .box-where-we-are{
 
-     padding: 20px 150px;
+     padding-right: 150px;
+     padding-left: 150px;
+     padding-top: 20px;
   }
 
 #where-we-are > .container{
@@ -306,10 +312,6 @@ nav li~li {
   padding-top: 50px;
   }
 
-.box-map{
-
-  margin-top: 20px;
-}
 
 #gmap_canvas{
   margin: 0;
@@ -334,7 +336,7 @@ nav li~li {
   background-position: top left, bottom center;
   background-repeat:no-repeat;
   height: auto;
-  font-size: 1.3em;
+  font-size: 1.5em;
 
 }
 
@@ -342,6 +344,8 @@ nav li~li {
 
      font-weight: 700;
      margin-bottom: 50px;
+     padding-right: 40px;
+     padding-left: 40px;
   }
 
   #what-we-do h3{
@@ -389,12 +393,20 @@ nav li~li {
 #members{
 
   color: #000;
+  font-size: 1.5em
 
 }
 
   #members h1{
 
     color: #cccccc;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  #members hr{
+    border-color:#0090d0;
+    margin: 30px 0;
   }
 
 .slider{
@@ -441,7 +453,7 @@ nav li~li {
   margin-right: 45px;
   display: inline-block;
   vertical-align: top;
-  margin-top: 29px;
+  margin-top: 59px;
   cursor: pointer;
 }
 
@@ -449,14 +461,14 @@ nav li~li {
   margin-left: 45px;
   display: inline-block;
   vertical-align: top;
-  margin-top: 29px;
+  margin-top: 59px;
   cursor: pointer;
 }
 
 .slider-dots {
   list-style: none;
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 50px;
   padding-left: 0;
   margin-bottom: 0;
 }
@@ -472,16 +484,29 @@ nav li~li {
   color: #0090d0;
 }
 
-.text-become-member{
+#become-member{
+    padding-bottom: 50px;
+}
+
+#become-member h1{
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+.become-member-text{
 
   color: #888888;
-  width: 50%;
-  font-size: 1.6em;
+  width: 80%;
+  font-size: 1.5em;
+  padding-top: 15px;
 }
-.text-become-member a{
+  
+  .become-member-text a{
 
-  color: #5f5f5f;
-}
+    color: #5f5f5f;
+  }
+
+
 /* ==========================================================================
    Donate
    ========================================================================== */
@@ -493,7 +518,8 @@ nav li~li {
   background-position: top left, bottom center;
   background-repeat:no-repeat;
   height: auto;
-  padding-bottom: 20px;
+  padding-bottom: 150px;
+  font-size: 1.5em;
 
 }   
 
@@ -506,9 +532,14 @@ nav li~li {
 
   #donate header h1{
 
-    font-size:2em;
+    font-size:2.5em;
     font-weight: 600;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-transform: uppercase;
+
   }
+
 .with-money{
 
   margin-bottom: 80px;
@@ -516,7 +547,7 @@ nav li~li {
 
 .with-money-box{
 
-  margin-top: 100px; 
+  margin-top: 90px; 
 }
 
 .bank-box{
@@ -543,7 +574,7 @@ nav li~li {
   color: #5f5f5f;
   padding: 20px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 .donate-value{
@@ -554,9 +585,13 @@ nav li~li {
 
 .other-ways-to-help{
 
-  font-size: 1.5em;
   margin-bottom: 100px;
 }
+
+  .other-ways-to-help h1{
+
+    margin-bottom: 40px;
+  }
 
 .directly-donate-box{
 
@@ -571,6 +606,11 @@ nav li~li {
 
   }
 
+.transparency{
+
+  padding-top: 30px;
+}
+
 /* ==========================================================================
    Contact
    ========================================================================== */
@@ -579,34 +619,61 @@ nav li~li {
 
   color: #5f5f5f;
   font-size: 1.5em;
+
 }
 
-  #contact header{
+
+  #contact h1{
 
     color: #ccc;
-    padding-bottom: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size:2.5em;
+    font-weight: 600;
+
 
   }
 
   #contact form {
 
     padding-top: 50px;
+
  
   }
 
     #contact form a{
 
       color: inherit;
+      text-decoration: none;
    
     }
 
-  .social-contact{
+.contact-content{
+  
+  width: 80%;
+  
+}
+
+
+.social-contact{
 
     display: block;
     vertical-align:middle;
     padding-bottom: 10px;
   }
-   
+
+  .social-contact img{
+
+    margin-right: 15px;
+  }
+  
+  #contact input[type="text"],
+  input[type="email"]{
+
+    width: 48%;
+  } 
 
   #contact input, textarea {
     border: 1px solid #ccc;
@@ -616,14 +683,14 @@ nav li~li {
   #contact textarea{
 
     height: 200px;
-    width: 90%;
+    width: 100%;
   }
 
     #contact input[type="submit"]{
 
       background-color: #0090d0;
       color: #fff;
-      padding: 10px;
+      padding: 10px 30px;
       font-weight: bold;
       text-transform: uppercase;
       border: none;
@@ -631,6 +698,7 @@ nav li~li {
       -moz-box-shadow: 0px 3px 0px 0px rgba(1,109,157,1);
       box-shadow: 0px 3px 0px 0px rgba(1,109,157,1);
     }
+
 .side-form{
 
   padding-top: 20px;
@@ -644,22 +712,43 @@ footer{
 
     margin-top: 30px;
     height: 100px;
+    font-size: 1.5em;
 
 }
 
 
 .footer-brand p{
 
-  font-size: 1.2em;
+  font-size: 0.8em;
   margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
 
 }
 
+.footer-location{
 
+  font-size: 0.7em;
+}
 
   .footer-location img{
 
   padding-right: 5px;
+}
+
+  .footer-location > div{
+
+    padding-bottom: 10px;
+  }
+
+.footer-location-phone{
+
+  font-weight: 600;
+}
+
+  .footer-location-phone .bigger-number{
+
+  font-size:1.5em;
 }
 
 .footer-social a{
@@ -676,7 +765,7 @@ footer{
 
     background-color: #5fb158;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 10px 15px;
      -webkit-box-shadow: 0px 3px 0px 0px rgba(86,161,80,1);
         -moz-box-shadow: 0px 3px 0px 0px rgba(86,161,80,1);

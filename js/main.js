@@ -56,7 +56,7 @@ var main = function() {
     var currentSlide = $('.active-profile');
     var prevSlide = currentSlide.prev();
 
-    var currentDot = $('.active-profile');
+    var currentDot = $('.active-dot');
     var prevDot = currentDot.prev();
 
     if(prevSlide.length === 0) {
