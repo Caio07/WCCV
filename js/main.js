@@ -8,9 +8,12 @@ function init_map(){
 		scrollwheel: false
 		};
 		map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+
+    var image = 'img/marker-icon.png';
 		marker = new google.maps.Marker({
 			map: map,
-			position: new google.maps.LatLng(1.1577917,30.734995000000026)
+			position: new google.maps.LatLng(1.1577917,30.734995000000026),
+      icon: image
 		});
 		
 		
