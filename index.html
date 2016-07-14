@@ -33,6 +33,7 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.css" media="screen">
         <link rel="stylesheet" href="css/main.css">
 
 
@@ -75,33 +76,33 @@
           <div class="col-md-6 col-sm-6 box-home-left">
             <h1>We are the <br/> World Child Care Vision.</h1>
             <p>We help orphans, elderly people and victims of civil war, HIV and Malaria in Africa and we need your help to keep up the good work. 
-            <a href="#donate">Help us now +</a>
+              <a href="#donate" class="not-visible">Help us now +</a>
             </p>
-            <p>The organization was founded in August 15, 2013, from the brave decision of Akeem Kafumba, who knows very well how tough a children’s life can be. We were born to seek a proper and healthy life to our kids. 
-            <a href="#the-wccv"> Read more + </a>
+            <p  class="not-visible">The organization was founded in August 15, 2013, from the brave decision of Akeem Kafumba, who knows very well how tough a children’s life can be. We were born to seek a proper and healthy life to our kids. 
+              <a href="#the-wccv"  class="not-visible"> Read more + </a>
             </p>
           </div>
           <div class="col-md-6 col-sm-6 box-home-right">
-            <h2> We need you! </h2>
-            <p> We’re counting on your help to keep our plans working. Click the button and take a look on the many ways you can make a difference to our cause.</p>
+            <h2 class="not-visible"> We need you! </h2>
+            <p class="not-visible"> We’re counting on your help to keep our plans working. Click the button and take a look on the many ways you can make a difference to our cause.</p>
             <div class="btn-donate">
               <a href="#donate"> Donate now </a>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+        </div><!-- Final Linha -->
+      </div><!-- Final Container -->
+    </div><!-- Final Home -->
 
     <!-- The WCCV -->
     <div id="the-wccv">
       <header class="who-we-are-header">
-          <?xml version="1.0" encoding="utf-8"?>
-          <!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-          <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-          <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="960px" height="200px" viewBox="0 0 960 200" enable-background="new 0 0 960 200" xml:space="preserve">
-          <rect x="283.5" y="71.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="389" height="85"/>
-          <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" 
+        <?xml version="1.0" encoding="utf-8"?>
+        <!-- Box Header  -->
+        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+        <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="960px" height="200px" viewBox="0 0 960 200" enable-background="new 0 0 960 200" xml:space="preserve">
+          <rect x="283.5" y="71.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="389" height="85"></rect>
+          <text x="50%" y="60%" alignment-baseline="middle" text-anchor="middle" 
           style="
           font-size:2.5em; 
           font-weight:700; 
@@ -110,18 +111,17 @@
           <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="283.5,156 398,109.958 192,6.612 "/>
           <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="283.5,71.203 398,39.073 317,-2 "/>
           <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="398" y1="39.073" x2="397.5" y2="109.958"/>
-          </svg>
-          <!--<h1 class="text-center outlined-box"> Who we are </h1>-->
+        </svg>
       </header>
       <div class="the-wccv-content">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-6 hidden-xs">
               <p>Founded in 08/15/2013 from the brave decision of Akeem Kafumba, knowing how hard a child’s life could be, we were born fighting for a healthy life with dignity to our litle ones.</p>
               <p>The socioeconomic, educational and health conditions are major problems in the world affecting children, since many of them cannot overcome these obstacles, and don’t even have the  basics to assure their existence.</p>
               <p>After many meetings thinking about the troubles in our children’s lives, we decided to unite our strength and search for solutions to these problems, and thus the World Child Care Vision was born.</p>
             </div>
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-6 hidden-xs">
               <p>The name came by realizing that the same issues faced by the children of Africa could be found in many other places in the world. Our goal is to be worldwide.
               </p>
               <p>The first step was taken with distribution of books, pens and clothes, all bought with Akeem’s own effort, and now we aim to build an organization strong enough to be the pillars that our children need to grow up.</p>
@@ -135,28 +135,45 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+          <!-- Versão Mobile -->
+          <div class="carousel" data-flickity  data-flickity-options='{ "prevNextButtons": false }'>
+            <div class="carousel-cell">
+              <p>Founded in 08/15/2013 from the brave decision of Akeem Kafumba, knowing how hard a child’s life could be, we were born fighting for a healthy life with dignity to our litle ones.</p>
+              <p>The socioeconomic, educational and health conditions are major problems in the world affecting children, since many of them cannot overcome these obstacles, and don’t even have the  basics to assure their existence.</p>
+              <p>After many meetings thinking about the troubles in our children’s lives, we decided to unite our strength and search for solutions to these problems, and thus the World Child Care Vision was born.</p>
+            </div>
+            <div class="carousel-cell">
+              <p>The name came by realizing that the same issues faced by the children of Africa could be found in many other places in the world. Our goal is to be worldwide.</p>
+              <p>The first step was taken with distribution of books, pens and clothes, all bought with Akeem’s own effort, and now we aim to build an organization strong enough to be the pillars that our children need to grow up.</p>
+              <div class="outlined-box text-center">
+                <a href="#">Read our constitution</a>
+              </div>
+            </div>
+          </div><!-- Final Carousel -->
+        </div><!-- Final Container -->
+      </div><!-- Final The-WCCV-content -->
     </div>
+    
     <div class="where-we-are" id="where-we-are">
       <div class="container">
-          <header>
-            <h1 class="text-center outlined-box"> Where we are </h1>
-          </header>
-          <div class="row box-where-we-are">
-            <div class="col-md-6 col-sm-6">
-              <p>Our headquarters are located at Kyangwali Refugee Camp, in the Hoima district, in Uganda.<br/>
-              We are 287km to the northwest of the capital, Kampala.</p>
-              <p>Kyangwali hosts approximately 30,000 refugees, mostly Congolese and Sudanese.The journey from Hoima district town to Kyangwali takes more than four stressful hours on dirty bumpy roads.</p>
-              <p>The camp was established in the 1960s for Rwandan refugees but, at present, it is mainly home to Congolese refugees. The official number (in 2010, according to independent.co.ug) of refugees </p>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <p>from Congo, Burundi, Rwanda and Sudan is between 20,000 and 25,000 on camp, although the refugees themselves say they are over 30,000.</p>
-              <p>Uganda's healthcare performance is ranked as one of the worst in the world by the World Health Organization (WHO). Uganda is ranked 186th out of 191 nations.
-              <br/>Doctors and nurses generally stay in urban areas where pay and living conditions are better.
-              <br/>One solution to this healthcare crisis is to provide healthcare to poor rural communities and to refugees living in the Kyangwali Refugee Settlement Camp.</p>
-            </div>
+        <header>
+          <h1 class="text-center outlined-box"> Where we are </h1>
+        </header>
+        <div class="row box-where-we-are">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p>Our headquarters are located at Kyangwali Refugee Camp, in the Hoima district, in Uganda.<br/>
+            We are 287km to the northwest of the capital, Kampala.</p>
+            <p>Kyangwali hosts approximately 30,000 refugees, mostly Congolese and Sudanese.The journey from Hoima district town to Kyangwali takes more than four stressful hours on dirty bumpy roads.</p>
+            <p>The camp was established in the 1960s for Rwandan refugees but, at present, it is mainly home to Congolese refugees. The official number (in 2010, according to independent.co.ug) of refugees </p>
           </div>
+          <div class="col-md-6 col-sm-6  col-xs-12">
+            <p>from Congo, Burundi, Rwanda and Sudan is between 20,000 and 25,000 on camp, although the refugees themselves say they are over 30,000.
+            </p>
+            <p>Uganda's healthcare performance is ranked as one of the worst in the world by the World Health Organization (WHO). Uganda is ranked 186th out of 191 nations.
+            <br/>Doctors and nurses generally stay in urban areas where pay and living conditions are better.
+            <br/>One solution to this healthcare crisis is to provide healthcare to poor rural communities and to refugees living in the Kyangwali Refugee Settlement Camp.</p>
+          </div>
+        </div>
         <div class="row">
           <div class="col-md-12 box-data">
             <p class="outlined-box">Data From: <br/> http://www.independent.co.ug/index.php/features/features/42-features/3516-kyangwali-refugee-camp-between-hope-and-despair#sthash.ep36UpJJ.dpuf</p>
@@ -164,8 +181,8 @@
         </div>
       </div>
     </div>
-    <div class="row box-map">
-      <div class="col-md-12 col-xs-12" id="gmap_canvas"></div>
+    <div class="box-map">
+      <div id="gmap_canvas"></div>
     </div>
 
     <!-- What We Do -->
@@ -174,34 +191,70 @@
         <header>
           <h1 class="text-center outlined-box">What We do</h1>
         </header>
-        <p><strong>Vision:</strong> A healthy child that is economically and socially empowered through education and skills.</p>
-        <p><strong>Mission:</strong> To facilitate the children’s access to health care and sustainable life through provision of knowledge and skills.
-        </p>
-        <p><strong>Values:</strong> Diversity, Excellence, Love, Honesty, Humanity, Integrity and Commitment.</p><br/><br/>
-          <strong>Acting and objectives</strong><br/>
+        <div class="intro-text hidden-xs">
+          <p><strong>Vision:</strong> A healthy child that is economically and socially empowered through education and skills.</p>
+          <p><strong>Mission:</strong> To facilitate the children’s access to health care and sustainable life through provision of knowledge and skills.
+          </p>
+          <p><strong>Values:</strong> Diversity, Excellence, Love, Honesty, Humanity, Integrity and Commitment.</p><br/><br/>
+            <strong>Acting and objectives</strong><br/>
           <p>Our goals are to provide education, health, prevent HIV/AIDS and SGBV. We care mainly for orphans and poor children who suffer with civil war and the bad living conditions of the area, but we also pay attention to widows, the elderly, the homeless and people with disabilities. </p>
           <p>We have 2 programs, one for nutrition, aiming children between 0 and 5 years old, and an educational program, which tends to the scholar necessities of children between 3 and 18 years old.</p>
           <p>WCCV’s objective is the empowering of children through education, leadership, health care, self reliance and entrepreneurship to change their standards of living and have a sustainable society and also:</p>
-        <hr>
-        <div class="row">
-          <div class="col-md-3 col-md-offset-1 col-sm-4">
-            <ol class="list-we-do">
+        </div>
+        <hr class="not-visible">
+         <div class="list-we-do center-block hidden-xs clearfix">
+           <div class="box-list-we-do">
+             <ol>
+               <li>To assist orphan children in their basic needs and non basic needs such as: education, health, art and craft.</li>
+               <li>Offer them medicine and proper medical treatment, through qualified doctors.</li>
+               <li>Guarantee enough food and offer a balanced diet.</li>
+               <li>Make sure that the children are having clean water and sanitation by maintaining the water supplies and proper hygiene.</li>
+             </ol>
+           </div>
+           <div class="box-list-we-do">
+             <ol start="5">
+               <li> Create awareness about health promotion through the training of educators to teach people.</li>
+               <li> Create love, peace and unity in society,  aiming to create a one world family with no limits. </li>
+               <li> Support disability, teaching people how to be self reliant.</li>
+               <li> Reduce HIV/AIDS creating awareness and protection to the people, teaching them and offering blood tests.</li>
+             </ol>
+           </div>
+           <div class="box-list-we-do">
+             <ol start="9">
+               <li> Prevent malaria, offering proper medication and giving protection to the community.</li>
+               <li> To support mothers by equipping them with skills and knowledge for self-reliance. </li>
+               <li> To connect needy children to existing livelihood interventions.</li>
+             </ol>
+           </div>
+          </div>
+       <!-- Versão Mobile -->   
+       <div class="carousel intro-text-carousel" data-flickity data-flickity-options='{ "prevNextButtons": false }'>
+          <div class="carousel-cell">
+            <p><strong>Vision:</strong> A healthy child that is economically and socially empowered through education and skills.</p>
+            <p><strong>Mission:</strong> To facilitate the children’s access to health care and sustainable life through provision of knowledge and skills.
+            </p>
+            <p><strong>Values:</strong> Diversity, Excellence, Love, Honesty, Humanity, Integrity and Commitment.</p><br/><br/>
+            <strong>Acting and objectives</strong><br/>
+            <p>Our goals are to provide education, health, prevent HIV/AIDS and SGBV. We care mainly for orphans and poor children who suffer with civil war and the bad living conditions of the area, but we also pay attention to widows, the elderly, the homeless and people with disabilities. </p>
+          </div>
+          <div class="carousel-cell">
+            <p>We have 2 programs, one for nutrition, aiming children between 0 and 5 years old, and an educational program, which tends to the scholar necessities of children between 3 and 18 years old.</p>
+            <p>WCCV’s objective is the empowering of children through education, leadership, health care, self reliance and entrepreneurship to change their standards of living and have a sustainable society and also:</p>
+          </div>
+          <div class="carousel-cell">
+            <ol>
               <li>To assist orphan children in their basic needs and non basic needs such as: education, health, art and craft.</li>
               <li>Offer them medicine and proper medical treatment, through qualified doctors.</li>
               <li>Guarantee enough food and offer a balanced diet.</li>
               <li>Make sure that the children are having clean water and sanitation by maintaining the water supplies and proper hygiene.</li>
+              <li> Create awareness about health promotion through the training of educators to teach people.</li>
             </ol>
           </div>
-          <div class="col-md-3 col-md-offset-1 col-sm-4">
-            <ol start="5">
-              <li> Create awareness about health promotion through the training of educators to teach people.</li>
+          <div class="carousel-cell">
+            <ol start="6">
               <li> Create love, peace and unity in society,  aiming to create a one world family with no limits. </li>
               <li> Support disability, teaching people how to be self reliant.</li>
               <li> Reduce HIV/AIDS creating awareness and protection to the people, teaching them and offering blood tests.</li>
-            </ol>
-          </div>
-          <div class="col-md-3 col-md-offset-1 col-sm-4">
-            <ol start="9">
               <li> Prevent malaria, offering proper medication and giving protection to the community.</li>
               <li> To support mothers by equipping them with skills and knowledge for self-reliance. </li>
               <li> To connect needy children to existing livelihood interventions.</li>
@@ -215,7 +268,7 @@
             </header>
           </div>
         </div>
-        <div class="box-table">
+        <div class="box-table hidden-xs">
           <div class="plans-box-blue">
             <img src="img/icon-education.png" class="img-responsive center-block"/>
             <h2 class="text-center box-title">Education</h2>
@@ -228,7 +281,7 @@
             And we will promote health awareness through the training of educators, to help society.</p>
           </div>
         </div>
-        <div class="box-table">
+        <div class="box-table hidden-xs">
           <div class="plans-box-white">
             <img src="img/icon-children-right.png" class="img-responsive center-block"/>
             <h2 class="text-center box-title">Defend children’s rights <br/> in the world</h2>
@@ -241,86 +294,106 @@
             <p>For the orphans, we are planning to build an orphanage, where the children will be staying,eating, playing, sleeping, and having all the equipment for entertainment.</p><p>For widows and the disabled we will be giving proper skills so they can support themselves, giving them a starting point to rebuild their lives.</p>
           </div>
         </div>
-      </div>
-    </div>
+        <!-- Versão Mobile -->
+        <div class="carousel our-plans-carousel" data-flickity data-flickity-options='{ "prevNextButtons": false }' >
+          <div class="carousel-cell">
+            <div class="plans-box-blue">
+              <img src="img/icon-education.png" class="img-responsive center-block"/>
+              <h2 class="text-center box-title">Education</h2>
+              <p>Nursery School with 3 classrooms.</p> 
+              <p>Elementary school with 7 classrooms, for 30 students each.
+              Arts and Crafts classes.</p>
+              <p>We’ll provide uniforms, books, chairs, desks, lunch  and all the materials needed and the teachers for
+              all the kids. </p>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="plans-box-white">
+              <img src="img/icon-health.png" class="img-responsive center-block"/>
+              <h2 class="text-center box-title">Health, HIV-AIDS and SGBV</h2>
+              <p>Free Health center and roper medication, health education and provision of insecticide treated nets,
+              to fight Malaria and Cholera.</p>
+              <p>Nutritional service with suplementary feeding.</p>
+              <p>Door-to-door survey four times per year in search of  infected childrens.</p>
+              <p>Create awareness about HIV-AIDS and SGBV with conferences at schools and in the comunity and free HIV tests.</p>
+              <p>Provide  clean water and sanitation.</p>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="plans-box-white">
+              <img src="img/icon-children-right.png" class="img-responsive center-block"/>
+              <h2 class="text-center box-title">Defend children’s rights <br/> in the world</h2>
+              <p>We  will respect all the children’s rights in the world, and if someone break it, we will defend it in
+              the justice.</p>
+              <p>We will work on emergencies when needed. During war breaking, natural disasters and diseases affecting
+              Young people. Whenever a kid might be in danger, we will be there.</p>
+            </div>
+          </div>
+          <div class="carousel-cell">
+            <div class="plans-box-blue">
+              <img src="img/icon-care-for-orphans.png" class="img-responsive center-block"/>
+              <h2 class="text-center box-title">Care for orphans, widows, elders, homeless and disabled people</h2>
+              <p>For the orphans, we are planning to build na orphanage,  where the children will be staying and eating, playing, sleeping, and having all the equipment of entertaiment.</p>
+              <p>For widows and disabled we will support giving them proper skills so they can support themselves, then we will give them a starting point to rebuild their lives.</p>
+            </div>
+          </div>
+        </div><!-- Fim Carousel -->
+      </div><!--Container -->
+    </div><!--Fim What We Do -->
 
     <!-- Members -->
     <div class="members" id="members">
       <div class="container">
-      <header>
-        <h1 class="text-center outlined-box-gray"> Our Team </h1>
-      </header>
-      <div class="slider">
-        <div class="profile active-profile">
-          <img src="img/akeem-profile.png" class="profile-photo text-center center-block"/>
-          <span class="profile-name text-center center-block">Akeem Kafumba</span> 
-          <p>Founder-member born in Congo in 12/21/1986, comes from a background of struggling and overcoming. He suffered with the loss of his parents as a kid, due to rebel attacks. He grew up and studied in Goma, whence, years laters, in 2011, he had to run away  from the violence of war, when suddenly night attacks started to target students.</p>
-          <p>He then went to Kiwaja, a village 100km from Goma, where the rebel attacks continued. He ran once again to Isasha, in the Uganda border, which was a door for the new country, and settled down in Kyangwali Refugee camp, about 300km from the capital, Kampala.
-          Lead by his extreme experiences with poverty and danger, and with a promise and personal commitment with God, he decided to devote himself to take care of other children who may have been through similar problems.</p>
-          <p>After getting into the refugee camp, he noticed the great number of children that were not going to a school, suffering with jiggers and other diseases, and were mostly orphans. Some left their studies for the lack of school materials, clothes or even food, and for not having someone to look after them.</p>
-          <p>These same problems were found on the 14 villages that he went through.
-           Seeing the severity of the situation, Akeem assembled a meeting with parents trying to find a collective solution, without much success, since everyone there were refugees in harsh conditions of living.</p>
-          <p>Besides all of those conflicts, there was also the lack of medicine for basic care, even in the local heath centers.</p>
-          <p>Then Akeem  started to work as a supervisor in the Medics Without Borders NGO, dealing directly with children epidemic diseases.
-          After all that and with a lot of humanitarian experience, he founded World Child Care Vision, aiming for socially and economically free children empowered by education, trying to assure a proper future to each one of them.</p>
-        </div>
-        <div class="profile">
-          <img src="img/olara-profile.png" class="profile-photo text-center center-block"/>
-          <span class="profile-name text-center center-block">Olara Mark</span> 
-          <p class="profile-description">Born in Sudan. He already was involved with children care there, struggling with the lack of water, education and medicine for all the orphans.
-            He met Akeem and realized that they had the same goals, so he joined WCCV.</p>
-        </div>
-        <div class="profile">
-          <img src="img/william-profile.png" class="profile-photo text-center center-block"/>
-          <span class="profile-name text-center center-block">William Mulinda</span> 
-          <p class="profile-description">Hailing from Congo, he has a degree in Education and has worked with Save the Children before as head teacher of a nursery school.
-            Now he works with the Red Cross and is the general secretary of WCCV.</p>
-        </div>
-        <div class="profile">
-          <img src="img/solange-profile.png" class="profile-photo text-center center-block"/>
-          <span class="profile-name text-center center-block">Kavira Solonge</span> 
-          <p class="profile-description">From Congo, she is WCCV’s treasurer.She is a nurse, midwife and also a widow with 6 children.
+        <header>
+          <h1 class="text-center outlined-box-gray"> Our Team </h1>
+        </header>
+        <div class="carousel" data-flickity data-flickity-options='{ "prevNextButtons": false }'>
+          <div class="carousel-cell">
+            <img src="img/akeem-profile.png" class="profile-photo center-block"/>
+            <span class="profile-name text-center center-block">Akeem Kafumba</span> 
+            <p>Founder-member born in Congo in 12/21/1986, comes from a
+            background of struggling and overcoming. He suffered with the loss of his parents as a kid, due to rebel attacks.  Lead by his extreme experiences with poverty and danger, and with a promise and personal commitment with God, he decided to devote himself to take care of other children who may have been through similar problems.</p>
+          </div>
+          <div class="carousel-cell">
+            <img src="img/olara-profile.png" class="profile-photo text-center center-block"/>
+            <span class="profile-name text-center center-block">Olara Mark</span> 
+            <p class="profile-description">Born in Sudan. He already was involved with children care there, struggling with the lack of water, education and medicine for all the orphans. He met Akeem and realized that they had the same goals, so he joined WCCV.</p>
+          </div>
+          <div class="carousel-cell">
+            <img src="img/william-profile.png" class="profile-photo text-center center-block"/>
+            <span class="profile-name text-center center-block">William Mulinda</span> 
+            <p class="profile-description">Hailing from Congo, he has a degree in Education and has worked with Save the Children before as head teacher of a nursery school. Now he works with the Red Cross and is the general secretary of WCCV.</p>
+          </div>
+          <div class="carousel-cell">
+            <img src="img/solange-profile.png" class="profile-photo text-center center-block"/>
+            <span class="profile-name text-center center-block">Kavira Solonge</span> 
+            <p class="profile-description">From Congo, she is WCCV’s treasurer.She is a nurse, midwife and also a widow with 6 children.
             After we supported some of her kids at school she decided to become our volunteer.</p>
-        </div>
-        <div class="profile">
-          <img src="img/mwamini-profile.png" class="profile-photo text-center center-block"/>
-          <span class="profile-name text-center center-block">Mwamini Vicky</span> 
-          <p class="profile-description">Our administrator from Congo.She is 31 years old and has a nutrition degree.
+          </div>
+          <div class="carousel-cell">
+            <img src="img/mwamini-profile.png" class="profile-photo text-center center-block"/>
+            <span class="profile-name text-center center-block">Mwamini Vicky</span> 
+            <p class="profile-description">Our administrator from Congo.She is 31 years old and has a nutrition degree.
             Lost her parents during the war in Congo, which left her with 5 orphaned children. 
             After a long suffering with these kids she saw our work in the community and came to us to offer her help.</p>
+          </div>
+          <div class="carousel-cell">
+            <img src="img/abdu-profile.png" class="profile-photo text-center center-block"/>
+            <span class="profile-name text-center center-block">Abdu Mashimango.</span> 
+            <p class="profile-description">Our speaker. He has an Education degree. Currently working with AAH-U as a head teacher, he joined the organization by spreading the word about our goals, then his interest grew and he became a member.</p>
+          </div>
+          <div class="carousel-cell">
+            <img src="img/talissa-profile.png" class="profile-photo text-center center-block"/>
+            <span class="profile-name text-center center-block">Telissa Monteiro</span> 
+            <p class="profile-description">Core founder. Brazilian journalist who met Akeem and got to know about his story and his plans to WCCV in a trip to Congo and Uganda. She started to help since then, sharing all that she could about Akeem and WCCV, and making contacts in Brazil.
+            </p>
+          </div>
+          <div class="carousel-cell">
+            <img src="img/lee-profile.png" class="profile-photo text-center center-block"/>
+            <span class="profile-name text-center center-block">Flavio Lee</span> 
+            <p class="profile-description">Brazilian designer and core founder who met Akeem with Talissa’s help. He agreed to support WCCV after listening to Akeem’s history and dreams.</p>
+          </div>
         </div>
-        <div class="profile">
-          <img src="img/abdu-profile.png" class="profile-photo text-center center-block"/>
-          <span class="profile-name text-center center-block">Abdu Mashimango.</span> 
-          <p class="profile-description">Our speaker. He has an Education degree. Currently working with AAH-U as a head teacher, he joined the organization by spreading the word about our goals, then his interest grew and he became a member.</p>
-        </div>
-        <div class="profile">
-          <img src="img/talissa-profile.png" class="profile-photo text-center center-block"/>
-          <span class="profile-name text-center center-block">Telissa Monteiro</span> 
-          <p class="profile-description">Core founder. Brazilian journalist who met Akeem and got to know about his story and his plans to WCCV in a trip to Congo and Uganda. She started to help since then, sharing all that she could about Akeem and WCCV, and making contacts in Brazil.</p>
-        </div>
-        <div class="profile">
-          <img src="img/lee-profile.png" class="profile-photo text-center center-block"/>
-          <span class="profile-name text-center center-block">Flavio Lee</span> 
-          <p class="profile-description">Brazilian designer and core founder who met Akeem with Talissa’s help. He agreed to support WCCV after listening to Akeem’s history and dreams.</p>
-        </div>
-      </div> 
-
-      <div class="slider-nav text-center center-block">
-            <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-prev.png" class="arrow-prev"/>
-            <ul class="slider-dots">
-              <li class="dot active-dot">&bull;</li>
-              <li class="dot">&bull;</li>
-              <li class="dot">&bull;</li>
-              <li class="dot">&bull;</li>
-              <li class="dot">&bull;</li>
-              <li class="dot">&bull;</li>
-              <li class="dot">&bull;</li>
-              <li class="dot">&bull;</li>
-            </ul>
-            <img src="http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/arrow-next.png" class="arrow-next"/>
-      </div> 
-
         <hr>
         <div class="become-member" id="become-member">
           <header>
@@ -339,55 +412,109 @@
     <!-- Donate -->
     <div class="donate" id="donate">
       <div class="container">
+        <div class="desktop-version hidden-xs">
         <!-- With Money -->
-        <p class="text-center title-label">There are many ways to help our children:</p>
-        <div class="with-money">
-          <header>
-            <h1 class="text-center outlined-box">With Money </h1>
-          </header>  
-          <div class="row with-money-box">
-            <div class="col-md-6 col-sm-6 col-xs-12 bank-box">
-              <p>Make a direct money donation via paypal
-              Or send your donation to our bank account at:</p>
-              <p class="main-text"><strong>Equity Bank Uganda LTD.<br/>
-              Account 101 910 074 831 2<br/>
-              Swift code: EQBLUGK</strong></p>
-
-              <p>Equity bank works in correspondence with <br/><strong>Citibank NY <br/>Swift code: CITIUS33</strong></p>
-
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 donate-border-box">
-              <div class="donate-box">
-                <p>Our actual goal is to reach:<br/>
-                  <span class="donate-value">$20.000</span><br/>
-                  To build our first orphanage<br/>
-                  We’re counting on you.</p>
-                <button> Donate </button>
+          <p class="text-center title-label">There are many ways to help our children:</p>
+          <div class="with-money">
+            <header>
+              <h1 class="text-center outlined-box">With Money </h1>
+            </header>  
+            <div class="row with-money-box">
+              <div class="col-md-6 col-sm-6 col-xs-12 bank-box">
+                <p>Make a direct money donation via paypal
+                Or send your donation to our bank account at:</p>
+                <p class="main-text"><strong>Equity Bank Uganda LTD.<br/>
+                Account 101 910 074 831 2<br/>
+                Swift code: EQBLUGK</strong></p>
+                <p>Equity bank works in correspondence with <br/><strong>Citibank NY <br/>Swift code: CITIUS33</strong></p>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 donate-border-box">
+                <div class="donate-box">
+                  <p>Our actual goal is to reach:<br/>
+                    <span class="donate-value">$20.000</span><br/>
+                    To build our first orphanage<br/>
+                    We’re counting on you.</p>
+                  <button> Donate </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Other ways to help -->
-        <div class="other-ways-to-help">
-          <header>
-           <h1 class="text-center outlined-box">Other ways to help</h1>
-          </header>
-          <p>If you don’t have money or don’t wish to use it as a donation, you can help us by sending other basic supplies that we need.</p>
-          <p>  We accept everything: clothes, books, furniture, toys, hygiene products, medicine, non-perishable food and any other goods you may give us.</p>
-          <div class="directly-donate-box">
-            <p class="outlined-box">You can send it directly to:<br/>
-            <strong>Kyangwali Refugee Settlement - P.O Box 238 - Hoima - Uganda </strong><br/>
-            If needed you can talk to us by phone: +256788781305 or <a href="#">e-mail</a>.</p>
-          </div>
-        </div>
-          <!-- Transparency -->
-          <div class="transparency">
+          <!-- Other ways to help -->
+          <div class="other-ways-to-help">
             <header>
-              <h1 class="text-center outlined-box"> Transparency </h1>
+             <h1 class="text-center outlined-box">Other ways to help</h1>
             </header>
-            <a href="https://www.facebook.com/World-Child-Care-Vision-933782769979780/"><img src="img/icon-face.png" class="text-center center-block"></a>
-            <p class="text-center">In our <a href="https://www.facebook.com/World-Child-Care-Vision-933782769979780/">facebook</a> page you can check regular photos and how your donation is being used.</p>
+            <p>If you don’t have money or don’t wish to use it as a donation, you can help us by sending other basic supplies that we need.</p>
+            <p>  We accept everything: clothes, books, furniture, toys, hygiene products, medicine, non-perishable food and any other goods you may give us.</p>
+            <div class="directly-donate-box">
+              <p class="outlined-box">You can send it directly to:<br/>
+              <strong>Kyangwali Refugee Settlement - P.O Box 238 - Hoima - Uganda </strong><br/>
+              If needed you can talk to us by phone: +256788781305 or <a href="#">e-mail</a>.</p>
+            </div>
+          </div>
+            <!-- Transparency -->
+            <div class="transparency">
+              <header>
+                <h1 class="text-center outlined-box"> Transparency </h1>
+              </header>
+              <a href="https://www.facebook.com/World-Child-Care-Vision-933782769979780/"><img src="img/icon-face.png" class="text-center center-block"></a>
+              <p class="text-center">In our <a href="https://www.facebook.com/World-Child-Care-Vision-933782769979780/">facebook</a> page you can check regular photos and how your donation is being used.</p>
+            </div>
+          </div>
+          
+          <!--Versão Mobile -->
+          <div class="carousel" data-flickity data-flickity-options='{ "prevNextButtons": false }'>
+            <div class="carousel-cell">
+              <p class="text-center title-label">There are many ways to help our children:</p>
+              <div class="with-money">
+                <header>
+                  <h1 class="text-center outlined-box">With Money </h1>
+                </header>  
+                <div class="row with-money-box">
+                  <div class="col-md-6 col-sm-6 col-xs-12 bank-box">
+                    <p>Make a direct money donation via paypal
+                    Or send your donation to our bank account at:</p>
+                    <p class="main-text"><strong>Equity Bank Uganda LTD.<br/>
+                    Account 101 910 074 831 2<br/>
+                    Swift code: EQBLUGK</strong></p>
+                    <p>Equity bank works in correspondence with <br/><strong>Citibank NY <br/>Swift code: CITIUS33</strong></p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12 donate-border-box">
+                    <div class="donate-box">
+                      <p>Our actual goal is to reach:<br/>
+                        <span class="donate-value">$20.000</span><br/>
+                        To build our first orphanage<br/>
+                        We’re counting on you.</p>
+                      <button> Donate </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="other-ways-to-help">
+                <header>
+                 <h1 class="text-center outlined-box">Other ways to help</h1>
+                </header>
+                <p>If you don’t have money or don’t wish to use it as a donation, you can help us by sending other basic supplies that we need.</p>
+                <p>  We accept everything: clothes, books, furniture, toys, hygiene products, medicine, non-perishable food and any other goods you may give us.</p>
+                <div class="directly-donate-box">
+                  <p class="outlined-box">You can send it directly to:<br/>
+                  <strong>Kyangwali Refugee Settlement - P.O Box 238 - Hoima - Uganda </strong><br/>
+                  If needed you can talk to us by phone: +256788781305 or <a href="#">e-mail</a>.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="transparency">
+                <header>
+                  <h1 class="text-center outlined-box"> Transparency </h1>
+                </header>
+                <a href="https://www.facebook.com/World-Child-Care-Vision-933782769979780/"><img src="img/icon-face.png" class="text-center center-block"></a>
+                <p class="text-center">In our <a href="https://www.facebook.com/World-Child-Care-Vision-933782769979780/">facebook</a> page you can check regular photos and how your donation is being used.</p>
+              </div>
+            </div>
           </div>
       </div>
     </div>
@@ -407,7 +534,7 @@
               <strong>Your email:</strong><br/>
               <input type="email" name="email"><br><br>
               <div class="row">
-                <div class="col-md-6 col-xs-6">
+                <div class="col-md-6 col-xs-12">
                   <textarea rows="4" cols="50" name="message" form="contact-form">
                   </textarea>
                 </div>
@@ -432,7 +559,7 @@
       <footer>
         <div class="container">
           <div class="row">
-            <div class="col-md-3 col-sm-3 col-xs-2 footer-brand">
+            <div class="col-md-3 col-sm-3 col-xs-4 footer-brand">
               <p class="text-center">World Child Care Vision</p>
             </div>
             <div class="col-md-4 col-sm-4 hidden-xs footer-location">
@@ -445,18 +572,19 @@
                 <span>(+256)<span class="bigger-number"> 788781305</span></span>
               </div>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-4 footer-social text-center">
+            <div class="col-md-3 col-sm-3 col-xs-5 footer-social text-center">
               <a href="https://www.facebook.com/World-Child-Care-Vision-933782769979780/" target="_blank"><img src="img/thumb-face.png" alt="facebook"></a>
               <a href="mailto:talk.to.wccv@gmail.com"><img src="img/thumb-mail.png"  alt="mail"></a>
             </div>
-            <div class="col-md-2 col-sm-2 col-xs-1 footer-donate">
+            <div class="col-md-2 col-sm-2 col-xs-3 footer-donate">
               <a href="#donate">Donate</a>
             </div>
           </div>
         </div>
       </footer>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
       <script src="js/main.js"></script>
     </body>
 </html>

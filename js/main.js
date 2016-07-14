@@ -3,6 +3,7 @@
 function init_map(){
 	var myOptions = {
 		zoom:10,
+    draggable: false,
 		center:new google.maps.LatLng(1.1577917,30.734995000000026),
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		scrollwheel: false

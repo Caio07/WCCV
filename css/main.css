@@ -6,6 +6,15 @@
 
 /* General */
 
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
 *{
  margin: 0; 
  padding: 0; 
@@ -72,6 +81,31 @@ header{
   outline: 1px solid #cccccc;
   padding: 0.625em;
 }
+
+.carousel{
+  display: none;
+}
+
+.carousel-cell {
+  width: 100%;
+  margin-right: 10px;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+}
+
+.flickity-page-dots {
+  bottom: 0;
+}
+
+.flickity-page-dots .dot {
+  height: 10px;
+  width: 70px;
+  margin: 5px;
+  background: transparent;
+  border-radius: 0;
+  border: 2px solid #fff;
+}
+
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -86,7 +120,7 @@ nav{
 
 }
 
-  nav .navbar-brand{
+.navbar-brand{
 
     padding: 0.5rem 0;
   }
@@ -104,7 +138,7 @@ nav li~li {
 
     nav .navbar-nav li{
 
-        padding: 0 1.5rem;
+        padding: 0 1.5em;
 }
 
       nav .navbar-nav li a{
@@ -149,7 +183,7 @@ nav li~li {
 
   background-image: url("../img/bg-home.jpg");
   background-size: cover;
-  background-position: right 10%, bottom center;
+  background-position: center;
   background-repeat:no-repeat;
   height: 620px;
   position: relative;
@@ -160,8 +194,7 @@ nav li~li {
   .box-home-left{
 
     position: absolute;
-    top: 150px;
-    max-width: 30%;
+    top: 8.125rem;
   }
 
   .box-home-left h1{
@@ -184,9 +217,9 @@ nav li~li {
 
     color: #3c3c3c;
     position: absolute;
-    bottom: 100px;
-    right: 350px;
-    max-width: 20%;
+    bottom: 2rem;
+    right: 13rem;
+    max-width: 25%;
   }
 
     .box-home-right h2{
@@ -207,7 +240,7 @@ nav li~li {
       background-color: #68c261;
       -webkit-clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
       clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
-      margin-left: -250px;
+      margin-left: -13rem;
       padding: 0.7rem;
       padding-right: 1rem;
       text-align: right;
@@ -234,7 +267,7 @@ nav li~li {
   
   background-image: url("../img/bg-who-we-are.jpg");
   background-size: cover;
-  background-position: top left, bottom center;
+  background-position: top;
   background-repeat:no-repeat;
   padding-bottom: 3rem;
   height: auto;
@@ -243,10 +276,19 @@ nav li~li {
 
 }
 
-  
   .the-wccv-content .row{
 
      padding: 0 9.375rem;
+  }
+
+   .the-wccv-content .carousel{
+    height: 450px;
+  }
+
+  .the-wccv-content .carousel .flickity-page-dots .dot.is-selected {
+
+    background-color: #6c9851;
+    border: 2px solid #6c9851;
   }
 
 .who-we-are-header{
@@ -293,11 +335,12 @@ nav li~li {
   
   background-image: url("../img/bg-where-we-are.jpg");
   background-size: cover;
+  background-position: top;
   background-repeat:no-repeat;
   height: auto;
   margin-top: 0;
   font-size: 1em;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
     
 }
 
@@ -356,7 +399,7 @@ nav li~li {
 
   background-image: url("../img/bg-what-we-do.jpg");
   background-size: 100% 100%,cover;
-  background-position: top left, bottom center;
+  background-position: top;
   background-repeat:no-repeat;
   height: auto;
   font-size: 1em;
@@ -386,7 +429,19 @@ nav li~li {
 
   }
 
-    .what-we-do ol li{
+
+.list-we-do .box-list-we-do:nth-last-child(n+2){
+
+  padding-right: 2%;
+}
+
+.box-list-we-do{
+
+  max-width: 33%;
+  float: left;
+}
+
+    .box-list-we-do ol li{
     
     font-size: 0.8em;
     padding-bottom: 1rem;
@@ -420,6 +475,30 @@ nav li~li {
 
   background-color: #0382bb;
 }
+
+.what-we-do .intro-text-carousel{
+
+  height: 500px;
+}
+
+  .what-we-do .intro-text-carousel ol{
+
+  padding-left:1em;
+}
+
+
+.what-we-do .our-plans-carousel{
+    height: 650px;
+    margin-bottom: 1em;
+  }
+
+ .what-we-do .intro-text-carousel .flickity-page-dots .dot.is-selected, .what-we-do .our-plans-carousel .flickity-page-dots .dot.is-selected {
+
+    background-color: #4373a3;
+    border: 2px solid #4373a3;
+  }
+
+
 /* ==========================================================================
    Members
    ========================================================================== */
@@ -434,6 +513,7 @@ nav li~li {
   .members h1{
 
     color: #cccccc;
+    margin-bottom: 1em;
     padding-right: 40px;
     padding-left: 40px;
     text-transform: uppercase;
@@ -444,28 +524,24 @@ nav li~li {
     margin: 1.875rem 0;
   }
 
-.slider{
+  .members .carousel{
 
-  position: relative;
-  height: 650px;
-  margin-bottom: 1.5rem;
-}
+    height: 500px;
+    display: block;
+  }
 
 
-.profile{
+  .members .carousel .flickity-page-dots .dot {
 
-  display: none;
-  padding-top: 1.25rem;
-  position: absolute;
-  top: 0;
-  left: 0;
+  border: 2px solid #ccc;
+  width: 30px;
+  }
 
-}
+  .members .carousel .flickity-page-dots .dot.is-selected{
 
-.active-profile{
-
-  display: block;
-}
+    background-color: #4373a3;
+    border: 2px solid #4373a3;
+  }
 
 .profile-name{
 
@@ -484,40 +560,6 @@ nav li~li {
 
 }
 
-.arrow-prev {
-  margin-right: 2.8125rem;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 3.75rem;
-  cursor: pointer;
-}
-
-.arrow-next {
-  margin-left: 2.8125rem;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 3.75rem;
-  cursor: pointer;
-}
-
-.slider-dots {
-  list-style: none;
-  display: inline-block;
-  padding-top: 2.1875rem;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.slider-dots li {
-  color: #ccc;
-  display: inline;
-  font-size: 3em;
-  margin-right: 0.3125rem;
-}
-
-.slider-dots li.active-dot {
-  color: #0090d0;
-}
 
 .become-member{
     padding-bottom: 3.125rem;
@@ -558,10 +600,10 @@ nav li~li {
 
   background-image: url("../img/bg-donate.jpg");
   background-size: cover;
-  background-position: top left, bottom center;
+  background-position: top;
   background-repeat:no-repeat;
   height: auto;
-  padding-bottom: 9.375rem;
+  padding-bottom: 8.5rem;
   font-size: 1em;
 
 }   
@@ -577,6 +619,12 @@ nav li~li {
 
   }
 
+.donate .carousel .flickity-page-dots .dot.is-selected{
+
+    background-color: #6c9851;
+    border: 2px solid #6c9851;
+  }
+
 
 .title-label{
 
@@ -586,17 +634,17 @@ nav li~li {
 
 .with-money{
 
-  margin-bottom: 5rem;
+  margin-bottom: 10em;
 }
 
 .with-money-box{
 
-  margin-top: 5.625rem; 
+  margin-top: 5.625em; 
 }
 
 .bank-box{
 
-  padding: 0 5rem;
+  padding: 0 5em;
   font-size: 1em;
 }
 
@@ -604,19 +652,24 @@ nav li~li {
       font-size: 1.5em;
   }
 
+.donate .carousel{
+
+  height: 800px;
+}
+
 .donate-border-box{
 
   border: 1px solid #fff;
-  padding: 1.875rem;
+  padding: 1.875em;
   background: none;
-  width: 40%;
+  width: 45%;
 }
 
 .donate-box{
 
   background: #fff;
   color: #5f5f5f;
-  padding: 1.25rem;
+  padding: 1.25em;
   text-align: center;
   font-size: 1.3em;
 }
@@ -797,12 +850,12 @@ footer{
 
 .footer-social a{
 
-  padding: 0 0.625rem;
+  padding: 0 0.625em;
 }
 
 .footer-donate{
 
-  margin-top: 0.625rem;
+  margin-top: 0.625em;
 }
 
   .footer-donate a{
@@ -810,7 +863,7 @@ footer{
     background-color: #5fb158;
     text-decoration: none;
     font-size: 1em;
-    padding: 0.625rem 1rem;
+    padding: 0.625em 1em;
      -webkit-box-shadow: 0px 3px 0px 0px rgba(86,161,80,1);
         -moz-box-shadow: 0px 3px 0px 0px rgba(86,161,80,1);
         box-shadow: 0px 3px 0px 0px rgba(86,161,80,1);
@@ -828,16 +881,311 @@ footer{
 
     width: 960px;
   }
-}
-/*
-@media screen and (max-width: 778px) {
 
-    #home
-   {
-    background: red;
+  .box-home-left{
+
+    width: 35%;
   }
-}*/
 
+
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+
+  .box-home-left{
+
+    width: 50%;
+  }
+
+  .box-home-right{
+
+    right: 7rem;
+    max-width: 30%;
+  }
+
+}
+
+@media screen and (max-width: 1200px){
+  
+   .donate{
+    
+    background-image: url("../img/bg-donate.jpg");
+    
+  }
+
+  .other-ways-to-help{
+
+    padding-top: 10rem;
+  }
+
+  .transparency{
+
+    padding-top: 4rem;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  nav{
+
+    font-size: 0.7em;
+  }
+
+   #home{
+
+   background-position: 50%;
+ }
+
+ .box-home-right{
+
+  bottom: 1.875em;
+  right: 2rem;
+  max-width: 35%;
+ }
+
+}
+@media screen and (max-width: 767px) {
+
+  .the-wccv-content, #what-we-do,#members,#donate,#contact{
+
+  padding-top: 1rem;
+}
+
+  .navbar-brand
+   {
+    position: absolute;
+    padding: 15px 15px;
+    width: 100%;
+    left: 30%;
+    top: 0;
+    text-align: center;
+    margin: auto;
+  }
+
+  .not-visible{
+    display: none;
+  }
+
+  nav{
+
+    background-color: rgba(255,255,255, 0.95);
+  }
+
+  .icon-bar{
+  background-color: #fff;
+ }
+
+  .navbar-toggle{
+  
+  background-color: #1082ba;
+  border: none;
+  border-radius: 0px;
+  float: left;
+  margin-top: 0;
+  margin-left: 1rem;
+ }
+  
+ .navbar-collapse{
+
+  border: none;
+  box-shadow: none;
+ }
+
+ #home{
+
+   background-position: 20%;
+ }
+
+
+ .box-home-left{
+
+ width: 100%;
+
+}
+
+.box-home-right{
+
+    color: #3c3c3c;
+    position: absolute;
+    bottom: 8em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+  }
+
+.box-home-right .btn-donate{
+      
+      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      margin-left: 0;
+      text-align: center;
+
+}
+
+.box-home-right .btn-donate a{
+
+    font-size: 2em;
+
+  }
+
+.who-we-are-header{
+
+  background-color:#7daf5e;
+  height: 100px;
+}
+
+.the-wccv-content{
+  background-image: none;
+  background-color: #7daf5e;
+}
+
+ .the-wccv-content .row{
+
+  padding: 0 1rem;
+ }
+
+
+.profile-photo{
+
+  width: 30%;
+  padding: 0.5em;
+}
+
+.profile span{
+  word-break: break-all;
+}
+
+.where-we-are{
+
+  background-position: 40%;
+  font-size: 0.8em;
+}
+
+.box-where-we-are{
+
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.box-table{
+
+  display: block;
+}
+
+ .slider{
+  height: 600px;
+ }
+
+ .profile .center-block{
+    
+    display: inline-block;
+
+ }
+
+ .donate{
+  
+  background-image: none;
+  background-color: #7aac5b; 
+  font-size: 0.8em;
+  
+ }
+
+ .donate-border-box{
+    
+    border: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+ }
+
+ .donate-box{
+    
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+
+ }
+
+ .directly-donate-box .outlined-box{
+
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .contact{
+  font-size: 0.8em;
+ }
+
+ .contact input[type="text"], input[type="email"]{
+
+    width: 100%;
+ }
+
+ .contact input[type="submit"]{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+  
+  footer{
+
+    font-size: 0.8em;
+  }
+
+
+.carousel{
+  display: block;
+}
+}
+
+@media screen and (max-width: 500px) {
+
+  .navbar-brand
+   {
+
+    left: 25%;
+  }
+
+  .navbar-toggle{
+  
+  margin-left: 0;
+
+ }
+
+ #home{
+
+  height: 550px;
+
+ }
+
+ .box-home-right{
+
+    bottom: 2em;
+
+  }
+
+  .where-we-are h1{
+
+    font-size: 2em;
+  }
+
+  .plans-box-white,.plans-box-blue{
+
+   padding: 1.25em 1em;
+}
+
+.footer-social img{
+
+  width: 30%;
+}
+
+}
 
 
 
