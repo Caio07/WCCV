@@ -11,63 +11,49 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
 
-        <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
         <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
         <link rel="icon" type="image/png" href="favicon-194x194.png" sizes="194x194">
         <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
-        <link rel="icon" type="image/png" href="android-chrome-192x192.png" sizes="192x192">
         <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
         <link rel="manifest" href="manifest.json">
-        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-        <meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
         <link rel="stylesheet" href="css/main.css">
-
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
     </head>
-    <body>
+    <body id="top">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <header>   
-      <nav class="navbar navbar-fixed-top" role="navigation">
-        <div class="container"> 
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Word Wild Child Care"></a>
+       <header>
+        <nav class="navbar navbar-fixed-top" role="navigation">
+          <div class="container"> 
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Word Wild Child Care"></a>
+            </div>
+            <!--<div id="navbar" class="offcanvas-xs nav-fixed-left">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#top">The WCCV</a></li>
+                <li><a href="#what-we-do">What We Do</a></li>
+                <li><a href="#members">Members</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!--/.navbar-collapse -->
           </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#the-wccv">The WCCV</a></li>
-              <li><a href="#what-we-do">What We Do</a></li>
-              <li><a href="#members">Members</a></li>
-              <li><a href="#donate">Donate</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.navbar-collapse -->
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
     <!-- HOME -->
     <div id="home">
@@ -92,73 +78,86 @@
         </div><!-- Final Linha -->
       </div><!-- Final Container -->
     </div><!-- Final Home -->
-
-    <!-- The WCCV -->
-    <div id="the-wccv">
-      <header class="who-we-are-header">
-        <?xml version="1.0" encoding="utf-8"?>
-        <!-- Box Header  -->
-        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-        <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="960px" height="200px" viewBox="0 0 960 200" enable-background="new 0 0 960 200" xml:space="preserve">
-          <rect x="283.5" y="71.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="389" height="85"></rect>
-          <text x="50%" y="60%" alignment-baseline="middle" text-anchor="middle" 
+      
+    <header class="who-we-are-header">
+      <!--Box Header -->
+      <svg id="faixa_who_we_are" width="698" height="306" viewBox="0 0 698 306">
+      <g>
+        <rect id="faixa_frente-8" x="190" y="186" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="456" height="76"/></rect>
+        <text x="60%" y="75%" alignment-baseline="middle" text-anchor="middle" 
           style="
-          font-size:2.5em; 
+          font-size:3em; 
           font-weight:700; 
           font-family:'Open Sans', sans-serif; 
           fill:#fff;">Who we are</text>  
-          <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="283.5,156 398,109.958 192,6.612 "/>
-          <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="283.5,71.203 398,39.073 317,-2 "/>
-          <line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="398" y1="39.073" x2="397.5" y2="109.958"/>
-        </svg>
-      </header>
-      <div class="the-wccv-content">
+        <path id="faixa_perspectiva_2-3" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M63.5,117L286,219v-75L63.5,42V117z"></path>
+        <path id="faixa_perspectiva_1-6" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M190,186l96.5-42v76L190,262V186z"></path>
+      </g>
+      </svg>
+    </header>
+      <div class="the-wccv" id="the-wccv">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6 col-sm-6 hidden-xs">
-              <p>Founded in 08/15/2013 from the brave decision of Akeem Kafumba, knowing how hard a child’s life could be, we were born fighting for a healthy life with dignity to our litle ones.</p>
-              <p>The socioeconomic, educational and health conditions are major problems in the world affecting children, since many of them cannot overcome these obstacles, and don’t even have the  basics to assure their existence.</p>
-              <p>After many meetings thinking about the troubles in our children’s lives, we decided to unite our strength and search for solutions to these problems, and thus the World Child Care Vision was born.</p>
-            </div>
-            <div class="col-md-6 col-sm-6 hidden-xs">
-              <p>The name came by realizing that the same issues faced by the children of Africa could be found in many other places in the world. Our goal is to be worldwide.
-              </p>
-              <p>The first step was taken with distribution of books, pens and clothes, all bought with Akeem’s own effort, and now we aim to build an organization strong enough to be the pillars that our children need to grow up.</p>
-              <div class="link-box">
-                <div class="outlined-box">
+         <div class="row">
+           <div class="col-md-6 col-sm-6 hidden-xs">
+             <p>Founded in 08/15/2013 from the brave decision of Akeem Kafumba, knowing how hard a child’s life could be, we were born fighting for a healthy life with dignity to our litle ones.</p>
+             <p>The socioeconomic, educational and health conditions are major problems in the world affecting children, since many of them cannot overcome these obstacles, and don’t even have the  basics to assure their existence.</p>
+             <p>After many meetings thinking about the troubles in our children’s lives, we decided to unite our strength and search for solutions to these problems, and thus the World Child Care Vision was born.</p>
+           </div>
+           <div class="col-md-6 col-sm-6 hidden-xs">
+             <p>The name came by realizing that the same issues faced by the children of Africa could be found in many other places in the world. Our goal is to be worldwide.
+             </p>
+             <p>The first step was taken with distribution of books, pens and clothes, all bought with Akeem’s own effort, and now we aim to build an organization strong enough to be the pillars that our children need to grow up.</p>
+             <div class="link-box">
+               <div class="outlined-box">
                  <a href="#">Here you can read our constitution</a>
-                </div>
-                <div class="outlined-box">
-                  <a href="#donate" >Make a donation now</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Versão Mobile -->
-          <div class="carousel" data-flickity  data-flickity-options='{ "prevNextButtons": false }'>
-            <div class="carousel-cell">
-              <p>Founded in 08/15/2013 from the brave decision of Akeem Kafumba, knowing how hard a child’s life could be, we were born fighting for a healthy life with dignity to our litle ones.</p>
-              <p>The socioeconomic, educational and health conditions are major problems in the world affecting children, since many of them cannot overcome these obstacles, and don’t even have the  basics to assure their existence.</p>
-              <p>After many meetings thinking about the troubles in our children’s lives, we decided to unite our strength and search for solutions to these problems, and thus the World Child Care Vision was born.</p>
-            </div>
-            <div class="carousel-cell">
-              <p>The name came by realizing that the same issues faced by the children of Africa could be found in many other places in the world. Our goal is to be worldwide.</p>
-              <p>The first step was taken with distribution of books, pens and clothes, all bought with Akeem’s own effort, and now we aim to build an organization strong enough to be the pillars that our children need to grow up.</p>
-              <div class="outlined-box text-center">
-                <a href="#">Read our constitution</a>
-              </div>
-            </div>
-          </div><!-- Final Carousel -->
-        </div><!-- Final Container -->
-      </div><!-- Final The-WCCV-content -->
-    </div>
+               </div>
+               <div class="outlined-box">
+                 <a href="#donate" >Make a donation now</a>
+               </div>
+             </div>
+           </div>
+         </div>
+         <!-- Versão Mobile -->
+         <div class="carousel" data-flickity data-flickity-options='{ "prevNextButtons": false }'>
+           <div class="carousel-cell">
+             <p>Founded in 08/15/2013 from the brave decision of Akeem Kafumba, knowing how hard a child’s life could be, we were born fighting for a healthy life with dignity to our litle ones.</p>
+             <p>The socioeconomic, educational and health conditions are major problems in the world affecting children, since many of them cannot overcome these obstacles, and don’t even have the  basics to assure their existence.</p>
+             <p>After many meetings thinking about the troubles in our children’s lives, we decided to unite our strength and search for solutions to these problems, and thus the World Child Care Vision was born.</p>
+           </div>
+           <div class="carousel-cell">
+             <p>The name came by realizing that the same issues faced by the children of Africa could be found in many other places in the world. Our goal is to be worldwide.</p>
+             <p>The first step was taken with distribution of books, pens and clothes, all bought with Akeem’s own effort, and now we aim to build an organization strong enough to be the pillars that our children need to grow up.</p>
+             <div class="outlined-box text-center">
+               <a href="#">Read our constitution</a>
+             </div>
+           </div>
+         </div> <!--Final Carousel -->
+       </div><!-- Final Container -->
+      </div><!-- Final The-WCCV -->
     
     <div class="where-we-are" id="where-we-are">
       <div class="container">
+      <div>
         <header>
-          <h1 class="text-center outlined-box"> Where we are </h1>
+          <svg id="faixa_where_we_are" width="465" height="311" viewBox="116.5 -1.333 465 311" preserveAspectRatio="meet">
+          <g>
+          <text x="72%" y="87%" alignment-baseline="middle" text-anchor="middle" 
+           style="
+           font-size:3em; 
+           font-weight:700; 
+           font-family:'Open Sans', sans-serif; 
+           fill:#fff;
+           text-transform: uppercase;">Where we are</text>  
+          <rect id="faixa_frente-7" x="120.5" y="230.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="455.53" height="76"/></rect>
+          <path id="faixa_perspectiva_3" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M456.5,74.5l120.993,128v-75L456.5-0.5"></path>
+          <path id="faixa_perspectiva_2-2" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M577.5,201.5l-101.369,48v-75l101.369-48
+            V201.5z"></path>
+          <path id="faixa_perspectiva_1-5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M576.031,230.5l-99.399-56v76l99.399,56
+            V230.5z"></path>
+          </g>
+          </svg>
         </header>
+      </div>
         <div class="row box-where-we-are">
           <div class="col-md-6 col-sm-6 col-xs-12">
             <p>Our headquarters are located at Kyangwali Refugee Camp, in the Hoima district, in Uganda.<br/>
@@ -176,7 +175,18 @@
         </div>
         <div class="row">
           <div class="col-md-12 box-data">
-            <p class="outlined-box">Data From: <br/> http://www.independent.co.ug/index.php/features/features/42-features/3516-kyangwali-refugee-camp-between-hope-and-despair#sthash.ep36UpJJ.dpuf</p>
+            <svg id="faixa_data_from" width="905" height="159" viewBox="-127.5 97.5 905 159">
+            <rect id="outline-2" x="-119" y="104" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="885.53" height="64"/></rect>
+            <text x="10%" y="75%" style="
+            font-family:'Open Sans', sans-serif;
+            font-size:0.88em;  
+            fill:#fff;">
+            <tspan x="-10%" dy="1.1em"> Data From:</tspan>
+            <tspan x="-10%" dy="1.1em">http://www.independent.co.ug/index.php/features/features/42-features/3516-kyangwali-refugee-camp-between-hope-and-despair#sthash.ep36UpJJ.dpuf</tspan>
+            </text>  
+            <path id="outline_perspectiva" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M531,184l50.899-17.289L768.531,167L531,248
+              V184z"></path>
+            </svg>
           </div>  
         </div>
       </div>
@@ -189,7 +199,28 @@
     <div class="what-we-do" id="what-we-do">
       <div class="container">
         <header>
-          <h1 class="text-center outlined-box">What We do</h1>
+          <svg id="faixa_what_we_do" width="552.056" height="252.689" viewBox="54.29 53.311 552.056 252.689">
+          <rect id="faixa_frente-2" x="92" y="2216" width="526" height="76"/></rect>
+          <text x="70%" y="105%" alignment-baseline="middle" text-anchor="middle" 
+          style="
+          font-size:3em; 
+          font-weight:700; 
+          font-family:'Open Sans', sans-serif; 
+          fill:#fff;
+          text-transform: uppercase;">What We do</text>  
+          <g id="faixa_titulo_copy_7">
+            <rect id="faixa_frente" x="172" y="2536" width="366" height="76"/>
+            <path id="faixa_frente_copy" d="M172,2536l66-70v76l-66,70V2536z"/>
+            <path id="faixa_frente_copy_2" d="M172,2366l66,100v76l-66-100V2366z"/>
+          </g>
+          <g id="faixa_titulo_copy_2">
+            <path id="faixa_perspectiva_2" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M67.496,142.915l127.5,102v-75l-127.5-102
+              V142.915z"></path>
+            <path id="faixa_perspectiva_1-4" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M138.996,220.915l56.5-52v76l-56.5,52
+              V220.915z"></path>
+            <rect id="faixa_frente-6" x="138.996" y="220.915" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="456" height="76"></rect>
+          </g>
+          </svg>
         </header>
         <div class="intro-text hidden-xs">
           <p><strong>Vision:</strong> A healthy child that is economically and socially empowered through education and skills.</p>
@@ -345,7 +376,25 @@
     <div class="members" id="members">
       <div class="container">
         <header>
-          <h1 class="text-center outlined-box-gray"> Our Team </h1>
+          <svg id="faixa_our_team" width="698" height="120" viewBox="0 92.5 698 120">
+          <g id="faixa_titulo_copy_3">
+            <rect id="faixa_frente-5" x="157" y="130" fill="none" stroke="#CCCCCC" stroke-miterlimit="10" width="386" height="76"/></rect>
+            <text x="50%" y="140%" alignment-baseline="middle" text-anchor="middle" 
+            style="font-size:3em; 
+            font-weight:700; 
+            font-family:'Open Sans', sans-serif; 
+            fill:#CCCCCC;
+            text-transform: uppercase;">Our Team</text>  
+            <g id="aba_esquerda">
+              <path id="faixa_perspectiva_1-2" fill="none" stroke="#CCCCCC" stroke-miterlimit="10" d="M157,130l26-30v76l-26,30V130z"></path>
+              <path id="faixa_tras" fill="none" stroke="#CCCCCC" stroke-miterlimit="10" d="M7,100h176v76H7l20-40L7,100z"></path>
+            </g>
+            <g id="aba_direita">
+              <path id="faixa_perspectiva_1-3" fill="none" stroke="#CCCCCC" stroke-miterlimit="10" d="M543,130l-26-30v76l26,30V130z"></path>
+              <path id="faixa_tras-2" fill="none" stroke="#CCCCCC" stroke-miterlimit="10" d="M693,100H517v76h176l-20-40L693,100z"></path>
+            </g>
+          </g>
+          </svg>
         </header>
         <div class="carousel" data-flickity data-flickity-options='{ "prevNextButtons": false }'>
           <div class="carousel-cell">
@@ -395,9 +444,25 @@
           </div>
         </div>
         <hr>
+      </div>
         <div class="become-member" id="become-member">
           <header>
-            <h1 class="text-center outlined-box-gray"> Become a member </h1>
+            <h3 class="text-center outlined-box-gray">Become a member</h3>
+          </header>
+          <header style="margin-left: 28em;" class="hidden-xs">
+          <svg id="faixa_become_member" width="1276" height="130.5" viewBox="61.5 175.5 1276 130.5">
+          <g id="faixa_titulo_copy_4">
+            <rect id="faixa_trás" x="630.5" y="196" fill="none" stroke="#CCCCCC" stroke-miterlimit="10" width="696" height="76"/>
+            <text x="28%" y="200%" alignment-baseline="middle" text-anchor="middle" 
+            style="font-size:3em; 
+            font-weight:700; 
+            font-family:'Open Sans', sans-serif; 
+            fill:#CCCCCC;
+            text-transform: uppercase;">Become a member</text>  
+            <path id="faixa_perspectiva_1" fill="none" stroke="#CCCCCC" stroke-miterlimit="10" d="M614.5,217l16.5-21v76l-16.5,21V217z"></path>
+            <rect id="faixa_frente-4" x="69.5" y="217" fill="none" stroke="#CCCCCC" stroke-miterlimit="10" width="546" height="76"/>
+          </g>
+          </svg>
           </header>
           <img src="img/icon-become-member.png" class="text-center center-block"/>
           <p class="become-member-text center-block">We need your help. More than money, we need your passion to aid us. If you want to do it with your own hands, we are accepting any direct help. <br/>You can talk to us via <a href="">e-mail</a>, phone or<a href="https://www.facebook.com/World-Child-Care-Vision-933782769979780/"> facebook</a> and book a visit. 
@@ -406,7 +471,6 @@
           <br/>
           We will be waiting for you.</p>
         </div>
-      </div>
     </div>
 
     <!-- Donate -->
@@ -443,7 +507,28 @@
           <!-- Other ways to help -->
           <div class="other-ways-to-help">
             <header>
-             <h1 class="text-center outlined-box">Other ways to help</h1>
+              <svg id="faixa_ways_to_help" width="552.056" height="252.689" viewBox="54.29 53.311 552.056 252.689">
+              <rect id="faixa_frente-2" x="92" y="2216" width="526" height="76"/></rect>
+              <text x="70%" y="105%" alignment-baseline="middle" text-anchor="middle" 
+              style="
+              font-size:2em; 
+              font-weight:700; 
+              font-family:'Open Sans', sans-serif; 
+              fill:#fff;
+              text-transform: uppercase;">Other ways to help</text>  
+              <g id="faixa_titulo_copy_7">
+                <rect id="faixa_frente" x="172" y="2536" width="366" height="76"/>
+                <path id="faixa_frente_copy" d="M172,2536l66-70v76l-66,70V2536z"></path>
+                <path id="faixa_frente_copy_2" d="M172,2366l66,100v76l-66-100V2366z"></path>
+              </g>
+              <g id="faixa_titulo_copy_2">
+                <path id="faixa_perspectiva_2" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M67.496,142.915l127.5,102v-75l-127.5-102
+                  V142.915z"></path>
+                <path id="faixa_perspectiva_1-4" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M138.996,220.915l56.5-52v76l-56.5,52
+                  V220.915z"></path>
+                <rect id="faixa_frente-6" x="138.996" y="220.915" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="456" height="76"></rect>
+              </g>
+              </svg>
             </header>
             <p>If you don’t have money or don’t wish to use it as a donation, you can help us by sending other basic supplies that we need.</p>
             <p>  We accept everything: clothes, books, furniture, toys, hygiene products, medicine, non-perishable food and any other goods you may give us.</p>
@@ -503,7 +588,7 @@
                   <p class="outlined-box">You can send it directly to:<br/>
                   <strong>Kyangwali Refugee Settlement - P.O Box 238 - Hoima - Uganda </strong><br/>
                   If needed you can talk to us by phone: +256788781305 or <a href="#">e-mail</a>.</p>
-                </div>
+                </div><?xml version="1.0" encoding="utf-8"?>
               </div>
             </div>
             <div class="carousel-cell">
@@ -523,7 +608,19 @@
     <div class="contact" id="contact">
       <div class="container">
         <header>
-          <h1 class="text-center outlined-box-gray"> Contact </h1>
+        <svg id="Camada_7" width="388" height="261.5" viewBox="157.5 44.5 388 261.5">
+        <g id="faixa_titulo_copy_7">
+          <rect id="faixa_frente" x="172" y="224" fill="none" stroke="#CCCCCC" stroke-miterlimit="10" width="366" height="76"></rect>
+          <text x="92%" y="100%" alignment-baseline="middle" text-anchor="middle" 
+            style="font-size:3em; 
+            font-weight:700; 
+            font-family:'Open Sans', sans-serif; 
+            fill:#CCCCCC;
+            text-transform: uppercase;">Contact</text>  
+          <path id="faixa_frente_copy" fill="none" stroke="#CCCCCC" stroke-miterlimit="10" d="M172,224l66-70v76l-66,70V224z"></path>
+          <path id="faixa_frente_copy_2" fill="none" stroke="#CCCCCC" stroke-miterlimit="10" d="M172,54l66,100v76l-66-100V54z"></path>
+        </g>
+        </svg>
         </header>
         <div class="contact-content center-block">
           <p>Any doubts? Want to send us a message?<br/>
@@ -586,5 +683,6 @@
       <script src="js/vendor/bootstrap.min.js"></script>
       <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
       <script src="js/main.js"></script>
-    </body>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+  </body>
 </html>

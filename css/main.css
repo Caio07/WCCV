@@ -7,11 +7,11 @@
 /* General */
 
 .clearfix:before,
-.clearfix:after {
-    content: " ";
+.clearfix:after{
+  content: " ";
   display: table;
 }
-.clearfix:after {
+.clearfix:after{
   clear: both;
 }
 
@@ -23,63 +23,86 @@
  box-sizing: border-box; 
 }
 
-
-html, body {
-    background-color: #fff;
-    color: #fff;
-    font-size: 100%;
-    font-family: 'Open Sans', sans-serif;
-    padding-bottom: 1.25rem;
-    height: 100%;
-
-}
-
-
-a {
-
-    text-decoration: underline;
-    font-weight: 700; 
-    color: #fff;
-
-}
-
-footer{
-
-    background-color: #0090d0;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-
-header{
-
-   display:flex;
-   align-items: center;
-   justify-content: center;
-
-}
-
 *:focus{
-
   outline: none;
 }
 
-.the-wccv-content, #what-we-do,#members,#donate,#contact{
+html, body{
+  background-color: #fff;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  height: 100%;
+  padding-bottom: 1.25rem;
+}
 
+a{
+  text-decoration: underline;
+  font-weight: 700; 
+  color: #fff;
+}
+
+  a:hover{
+    color: #FFF;
+  }
+
+footer{
+  background-color: #0090d0;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#the-wccv, #what-we-do,#members,#donate{
   padding-top: 5rem;
 }
 
-.outlined-box{
+#faixa_who_we_are{
+  margin-top: -9.375rem;
+  margin-left: -9.375rem;
+}
 
+#faixa_where_we_are{
+  margin-top: -9.375rem;
+}
+
+#faixa_what_we_do{
+  margin-top: -11rem;
+  margin-right: 7rem;
+}
+
+#faixa_our_team{
+  margin-bottom: 3rem;
+}
+
+#faixa_become_member{
+  margin-right: 15rem;
+}
+
+#faixa_ways_to_help{
+  margin-top: -17rem;
+}
+
+
+.outlined-box{
   outline: 1px solid #fff;
   padding: 0.625em;
 }
 
 .outlined-box-gray{
-
+  color: #CCCCCC;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 3rem;
   outline: 1px solid #cccccc;
   padding: 0.625em;
+  text-transform: uppercase;
 }
 
 .carousel{
@@ -98,80 +121,68 @@ header{
 }
 
 .flickity-page-dots .dot {
-  height: 10px;
-  width: 70px;
-  margin: 5px;
   background: transparent;
   border-radius: 0;
   border: 2px solid #fff;
+  height: 10px;
+  margin: 5px;
+  width: 70px;
 }
+
 
 /* ==========================================================================
    Header
    ========================================================================== */
 
 nav{
-
   background-color: #fff;
   font-size: 1em;
   height: 90px;
   text-transform: uppercase; 
-
-
 }
 
-.navbar-brand{
 
-    padding: 0.5rem 0;
+  nav li~li{ 
+    border-left: 1px solid #c7c7c7; 
   }
 
-  nav .navbar-nav{
+.navbar-nav{
+ margin-top: 1.2rem;
+ }
 
-  margin-top: 1.2rem;
+   .navbar-nav li{
+     padding: 0 1.5em;
+   }
 
-}
+     .navbar-nav li a{
+       text-decoration: none;
+       color: #3c3c3c;
+       font-weight: 300;
+       font-size: 1em;
+     }
 
-nav li~li { 
-
-  border-left: 1px solid #c7c7c7; 
-}
-
-    nav .navbar-nav li{
-
-        padding: 0 1.5em;
-}
-
-      nav .navbar-nav li a{
-
-          text-decoration: none;
-          color: #3c3c3c;
-          font-weight: 300;
-          font-size: 1em;
-
-}
-
-        nav .navbar-nav li a:hover, nav .navbar-nav li a:active, nav .navbar-nav li a:focus, nav .navbar-nav li a:visited{
-
-        background: #fff;
-        
-}
-
-
-        nav #navbar li.active a {
-            border-bottom: 3px solid #008ecf;
+        .navbar-nav li a:hover, nav .navbar-nav li a:active, nav .navbar-nav li a:focus, nav .navbar-nav li a:visited{
+            background: #fff;     
         }
 
-        nav #navbar li.active a:after{
+        nav li.active a{
+          border-bottom: 3px solid #008ecf;
+        }
 
-          position: absolute;
-          top: 90%;
-          left: 45%;
-          display: inline-block;
-          border-right: 6px solid transparent;
+        nav li.active a:after{
           border-bottom: 6px solid #008ecf;
           border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
           content: '';
-        }
+          display: inline-block;
+          left: 45%;
+          position: absolute;
+          top: 90%;
+        }      
+
+.navbar-brand{
+    padding: 0.5rem 0;
+}
 
 
 
@@ -180,159 +191,117 @@ nav li~li {
    ========================================================================== */
 
 #home{
-
   background-image: url("../img/bg-home.jpg");
-  background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
+  background-size: cover;
   height: 620px;
-  position: relative;
   padding-bottom: 7rem;
-
+  position: relative;
 }
 
-  .box-home-left{
-
-    position: absolute;
-    top: 8.125rem;
-  }
+.box-home-left{
+  position: absolute;
+  top: 8.125rem;
+}
 
   .box-home-left h1{
-      
-      font-size: 2em;
-      font-weight: 700;
-      margin-bottom: 2rem;
-
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 2rem;
   }
 
   .box-home-left p{
-
-    line-height: 150%;
-    font-size: 0.9em;
-    
+      line-height: 150%;
+      font-size: 0.9em;
   }
 
+.box-home-right{
+  bottom: 2rem;
+  color: #3c3c3c;
+  max-width: 25%;
+  position: absolute;
+  right: 13rem;
+}
 
-  .box-home-right{
-
-    color: #3c3c3c;
-    position: absolute;
-    bottom: 2rem;
-    right: 13rem;
-    max-width: 25%;
+  .box-home-right h2{
+    font-size: 2em;
+    font-weight: 600;
   }
 
-    .box-home-right h2{
+  .box-home-right p{
+    font-size: 0.8em;
+  }
 
-      font-size: 2em;
-      font-weight: 600;
-
-    }
-
-    .box-home-right p{
-
-      font-size: 0.8em;
-    }
-
-    .box-home-right .btn-donate{
-
-      
-      background-color: #68c261;
-      -webkit-clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
-      clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
-      margin-left: -13rem;
-      padding: 0.7rem;
-      padding-right: 1rem;
-      text-align: right;
-      -webkit-box-shadow: 0px 3px 0px 0px rgba(96,179,89,1);
-      -moz-box-shadow: 0px 3px 0px 0px rgba(96,179,89,1);
-      box-shadow: 0px 3px 0px 0px rgba(96,179,89,1);
-
-    }
-
-   
-      .box-home-right .btn-donate a{
-
-        text-decoration: none;
-        font-size: 2.5em;
-
-      }
+.btn-donate{      
+  background-color: #5fb158;
+  border-bottom: 5px solid rgba(86,161,80,1);
+  -webkit-clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -moz-box-shadow: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+  margin-left: -13rem;
+  padding: 0.7rem;
+  padding-right: 1rem;
+  text-align: right;
+}
+     
+  .btn-donate a{
+    font-size: 3.2em;
+    text-decoration: none;
+  }
 
 /* ==========================================================================
    The WCCV
    ========================================================================== */
 
-
-.the-wccv-content{
-  
+.the-wccv{
   background-image: url("../img/bg-who-we-are.jpg");
-  background-size: cover;
   background-position: top;
   background-repeat:no-repeat;
-  padding-bottom: 3rem;
-  height: auto;
+  background-size: cover;
   font-size: 1em;
-    
-
+  height: auto;
+  padding-bottom: 3rem;
+  position: relative;
 }
 
-  .the-wccv-content .row{
-
-     padding: 0 9.375rem;
+  .the-wccv .row{
+    padding: 0 9.375rem;
   }
 
-   .the-wccv-content .carousel{
-    height: 450px;
+  .the-wccv .carousel{
+    height: 250px;
   }
 
-  .the-wccv-content .carousel .flickity-page-dots .dot.is-selected {
-
-    background-color: #6c9851;
-    border: 2px solid #6c9851;
-  }
+    .the-wccv .carousel .flickity-page-dots .dot.is-selected {
+      background-color: #6c9851;
+      border: 2px solid #6c9851;
+    }
 
 .who-we-are-header{
-
   background-color: #5fb158;
   color: #fff;
   height: 200px;
-  width: 100%;
   text-transform: uppercase;
-
+  width: 100%;
 }
   
-  .who-we-are-header h1{
-     
-     font-size: 2.5em; 
-     font-weight: 700;
-     padding: 0.625rem 3.125rem;
-  }
+.link-box{
+  font-size: 0.9em;
+  margin-top: 1rem;
+  text-align: center;
+}
 
-
-  .link-box{
-  
-    font-size: 0.9em;
-    margin-top: 1rem;
-    text-align: center;
-
-  }
-
-    .link-box .outlined-box{
-
+  .link-box .outlined-box{
     margin-bottom: 2rem;
     width: 100%;
-
   }
-
-
-
 
 /* ==========================================================================
    Where We are
    ========================================================================== */
 
 .where-we-are{
-  
   background-image: url("../img/bg-where-we-are.jpg");
   background-size: cover;
   background-position: top;
@@ -340,44 +309,33 @@ nav li~li {
   height: auto;
   margin-top: 0;
   font-size: 1em;
-  padding-bottom: 3rem;
-    
+  padding-bottom: 3rem;   
 }
 
-
   .where-we-are h1{
-
-       font-weight: 700;
-       padding-right: 2.5rem;
-       padding-left: 2.5rem;
-       text-transform: uppercase;;
-      
-    }
+    font-weight: 700;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    text-transform: uppercase;; 
+  }
 
   .where-we-are > .container{
-
-  padding-top: 3.125rem;
+    padding-top: 3.125rem;
   }
 
 .box-data{
-
-    font-size: 0.7em;
-    font-weight: 600;
-    display:flex;
-        align-items: center;
-        justify-content: center;
-
+  font-size: 1em;
+  font-weight: 600;
+  display:flex;
+    align-items: center;
+    justify-content: center;
   }
 
 .box-where-we-are{
-
-     padding-right: 9.375rem;
-     padding-left: 9.375rem;
-     padding-top: 1.25rem;
-  }
-
-
-
+  padding-right: 9.375rem;
+  padding-left: 9.375rem;
+  padding-top: 1.25rem;
+}
 
 #gmap_canvas{
   margin: 0;
@@ -386,6 +344,7 @@ nav li~li {
   width: 100%;
   max-width: none;
 }
+
 #map-canvas img {
   max-width: none !important;
   background:none!important
@@ -396,122 +355,103 @@ nav li~li {
    ========================================================================== */
 
 .what-we-do{
-
   background-image: url("../img/bg-what-we-do.jpg");
   background-size: 100% 100%,cover;
   background-position: top;
   background-repeat:no-repeat;
   height: auto;
   font-size: 1em;
-
 }
 
   .what-we-do h1{
-
-     font-weight: 700;
-     margin-bottom: 3.125rem;
-     padding-right: 2.5rem;
-     padding-left: 2.5rem;
-     text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 3.125rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    text-transform: uppercase;
   }
 
   .what-we-do h3{
-
-     margin-bottom: 3.125rem;
-     font-weight: 700;
+    margin-bottom: 3.125rem;
+    font-weight: 700;
   }
 
   .what-we-do .box-title{
-
     font-size: 1.4em;
     font-weight: 600;
     padding-bottom: 1em;
-
   }
 
-
-.list-we-do .box-list-we-do:nth-last-child(n+2){
-
-  padding-right: 2%;
-}
-
-.box-list-we-do{
-
-  max-width: 33%;
-  float: left;
-}
-
-    .box-list-we-do ol li{
-    
-    font-size: 0.8em;
-    padding-bottom: 1rem;
-
+  .what-we-do .intro-text-carousel{
+    height: 350px;
+    margin-top: 3rem;
   }
 
-.box-table{
+    .what-we-do .intro-text-carousel ol{
+      padding-left:1em;
+    }
 
-  display: flex;
-
-}
-
-.plans-box-white,.plans-box-blue{
-
-   padding: 1.25rem 3.125rem;
-   flex: 1;
-}
-
-
-.plans-box-white{
-
-  background-color: #fff;
-  color: #5f5f5f;
-}
-  .plans-box-white h2{
-
-    color:#cccccc;
-  }
-
-.plans-box-blue{
-
-  background-color: #0382bb;
-}
-
-.what-we-do .intro-text-carousel{
-
-  height: 500px;
-}
-
-  .what-we-do .intro-text-carousel ol{
-
-  padding-left:1em;
-}
-
-
-.what-we-do .our-plans-carousel{
-    height: 650px;
+  .what-we-do .our-plans-carousel{
+    height: auto;
     margin-bottom: 1em;
+    padding-bottom: 2em;
   }
 
- .what-we-do .intro-text-carousel .flickity-page-dots .dot.is-selected, .what-we-do .our-plans-carousel .flickity-page-dots .dot.is-selected {
-
+  .what-we-do .intro-text-carousel .flickity-page-dots .dot.is-selected, .what-we-do .our-plans-carousel .flickity-page-dots .dot.is-selected {
     background-color: #4373a3;
     border: 2px solid #4373a3;
   }
 
+.intro-text{
+  margin-top: 2rem;
+}
+
+.list-we-do .box-list-we-do:nth-last-child(n+2){
+  padding-right: 2%;
+}
+
+.box-list-we-do{
+  max-width: 33%;
+  float: left;
+}
+
+  .box-list-we-do ol li{
+    font-size: 0.8em;
+    padding-bottom: 1rem;
+  }
+
+.box-table{
+  display: flex;
+}
+
+.plans-box-white,.plans-box-blue{
+  padding: 1.25rem 3.125rem;
+  flex: 1;
+}
+
+.plans-box-white{
+  background-color: #fff;
+  color: #5f5f5f;
+}
+  
+  .plans-box-white h2{
+    color:#cccccc;
+  }
+
+.plans-box-blue{
+  background-color: #0382bb;
+}
 
 /* ==========================================================================
    Members
    ========================================================================== */
 
 .members{
-
   color: #000;
   font-size: 1em;
-
 }
 
   .members h1{
-
     color: #cccccc;
     margin-bottom: 1em;
     padding-right: 40px;
@@ -525,26 +465,22 @@ nav li~li {
   }
 
   .members .carousel{
-
-    height: 500px;
+    height: auto;
     display: block;
+    padding-bottom: 2em;
   }
 
+    .members .carousel .flickity-page-dots .dot {
+      border: 2px solid #ccc;
+      width: 30px;
+    }
 
-  .members .carousel .flickity-page-dots .dot {
-
-  border: 2px solid #ccc;
-  width: 30px;
-  }
-
-  .members .carousel .flickity-page-dots .dot.is-selected{
-
-    background-color: #4373a3;
-    border: 2px solid #4373a3;
-  }
+    .members .carousel .flickity-page-dots .dot.is-selected{
+      background-color: #4373a3;
+      border: 2px solid #4373a3;
+    }
 
 .profile-name{
-
   color: #0090d0;
   font-size: 1.5em;
   font-weight: 700;
@@ -552,52 +488,44 @@ nav li~li {
 }
 
 .profile-photo{
-
   border: 1px solid #d0d0d0;
   border-radius: 50%;
   margin-bottom: 1.25rem;
   padding: 1em;
-
 }
 
-
 .become-member{
-    padding-bottom: 3.125rem;
+  padding-bottom: 3.125rem;
 }
 
   .become-member h1{
-      text-transform: uppercase;
-      font-weight: 700;
-      margin-bottom: 3rem;
-    }
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
 
   .become-member img{
-
     border: 1px solid #cfcfcf;
     border-radius: 50%;
     margin-bottom: 3rem;
   }
 
-  .become-member-text{
-
+.become-member-text{
     color: #888888;
     width: 80%;
     font-size: 1.2em;
     padding-top: 1rem;
-  }
+}
   
-    .become-member-text a{
-
-      color: #5f5f5f;
-    }
-
+  .become-member-text a{
+    color: #5f5f5f;
+  }
 
 /* ==========================================================================
    Donate
    ========================================================================== */
 
 .donate{
-
   background-image: url("../img/bg-donate.jpg");
   background-size: cover;
   background-position: top;
@@ -605,106 +533,85 @@ nav li~li {
   height: auto;
   padding-bottom: 8.5rem;
   font-size: 1em;
-
 }   
 
-  
   .donate header h1{
-
     font-size:2.5em;
     font-weight: 700;
     padding-right: 2.5rem;
     padding-left: 2.5rem;
     text-transform: uppercase;
-
   }
 
-.donate .carousel .flickity-page-dots .dot.is-selected{
+  .donate .carousel{
+    height: 650px;
+  }
 
+  .donate .carousel .flickity-page-dots .dot.is-selected{
     background-color: #6c9851;
     border: 2px solid #6c9851;
   }
 
+  .donate-border-box{
+    border: 1px solid #fff;
+    padding: 1.875em;
+    background: none;
+    width: 45%;
+  }
+
+  .donate-box{
+    background: #fff;
+    color: #5f5f5f;
+    padding: 1.25em;
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .donate-value{
+    font-weight: 700;
+    font-size: 2.8em;
+  }
 
 .title-label{
-
   margin-bottom: -1rem;
+  margin-left: 9rem;
 }
 
-
 .with-money{
-
-  margin-bottom: 10em;
+  margin-bottom: 17em;
 }
 
 .with-money-box{
-
-  margin-top: 5.625em; 
+  margin-top: 4em; 
 }
 
 .bank-box{
-
   padding: 0 5em;
   font-size: 1em;
 }
 
   .bank-box .main-text{
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 
-.donate .carousel{
-
-  height: 800px;
-}
-
-.donate-border-box{
-
-  border: 1px solid #fff;
-  padding: 1.875em;
-  background: none;
-  width: 45%;
-}
-
-.donate-box{
-
-  background: #fff;
-  color: #5f5f5f;
-  padding: 1.25em;
-  text-align: center;
-  font-size: 1.3em;
-}
-
-.donate-value{
-
-  font-weight: 700;
-  font-size: 2.8em;
-}
-
 .other-ways-to-help{
-
   margin-bottom: 6.25rem;
 }
 
   .other-ways-to-help h1{
-
     margin-bottom: 2.5rem;
   }
 
 .directly-donate-box{
-
   display:flex;
   margin-top: 1.875rem;
-
 }
 
   .directly-donate-box .outlined-box{
-
     padding: 1.25rem;
-
   }
 
 .transparency{
-
   padding-top: 1.875rem;
 }
 
@@ -713,15 +620,11 @@ nav li~li {
    ========================================================================== */
 
 .contact{
-
   color: #5f5f5f;
   font-size: 1em;
-
 }
 
-
   .contact h1{
-
     color: #ccc;
     padding-right: 2.5rem;
     padding-left: 2.5rem;
@@ -729,75 +632,60 @@ nav li~li {
     text-transform: uppercase;
     font-size:2.5em;
     font-weight: 700;
-
-
   }
 
-  .contact form {
-
+  .contact form{
     padding-top: 3.125rem;
-
- 
   }
 
     .contact form a{
-
       color: inherit;
       text-decoration: none;
-   
     }
 
 .contact-content{
-  
   width: 80%;
-  
+  margin-top: 2rem;
 }
 
-
 .social-contact{
-
-    display: block;
-    vertical-align:middle;
-    padding-bottom: 0.625rem;
-  }
+  display: block;
+  vertical-align:middle;
+  padding-bottom: 0.625rem;
+}
 
   .social-contact img{
-
     margin-right: 1rem;
   }
   
   .contact input[type="text"],
-  input[type="email"]{
-
-    width: 48%;
+    input[type="email"]{
+      width: 48%;
   } 
 
-  .contact input, textarea {
+  .contact input, textarea{
     border: 1px solid #ccc;
     margin-bottom: 0.625rem;
   }
 
   .contact textarea{
-
     height: 200px;
     width: 100%;
   }
 
-    .contact input[type="submit"]{
-
-      background-color: #0090d0;
-      color: #fff;
-      padding: 0.625rem 1.875rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      border: none;
-      -webkit-box-shadow: 0px 3px 0px 0px rgba(1,109,157,1);
-      -moz-box-shadow: 0px 3px 0px 0px rgba(1,109,157,1);
-      box-shadow: 0px 3px 0px 0px rgba(1,109,157,1);
-    }
+  .contact input[type="submit"]{
+    background-color: #0090d0;
+    color: #fff;
+    padding: 0.625rem 1.875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(1,109,157,1);
+    -moz-box-shadow: 0px 3px 0px 0px rgba(1,109,157,1);
+    box-shadow: 0px 3px 0px 0px rgba(1,109,157,1);
+  }
 
 .side-form{
-
   padding-top: 1.25rem;
 }
 
@@ -806,251 +694,233 @@ nav li~li {
    ========================================================================== */
 
 footer{
-
-    margin-top: 30px;
-    height: 100px;
-    font-size: 1em;
-
+  margin-top: 30px;
+  height: 100px;
+  font-size: 1em;
 }
 
-
 .footer-brand p{
-
   font-size: 0.8em;
   margin-top: 1.25rem;
   text-transform: uppercase;
   font-weight: 600;
-
 }
 
 .footer-location{
-
   font-size: 0.7em;
 }
 
   .footer-location img{
-
-  padding-right: 0.3125rem;
-}
+    padding-right: 0.3125rem;
+  }
 
   .footer-location > div{
-
     padding-bottom: 0.625rem;
   }
 
 .footer-location-phone{
-
   font-weight: 600;
 }
 
   .footer-location-phone .bigger-number{
-
-  font-size:1.5em;
-}
+    font-size:1.5em;
+  }
 
 .footer-social a{
-
   padding: 0 0.625em;
 }
 
 .footer-donate{
-
   margin-top: 0.625em;
 }
 
   .footer-donate a{
-
     background-color: #5fb158;
     text-decoration: none;
     font-size: 1em;
     padding: 0.625em 1em;
-     -webkit-box-shadow: 0px 3px 0px 0px rgba(86,161,80,1);
-        -moz-box-shadow: 0px 3px 0px 0px rgba(86,161,80,1);
-        box-shadow: 0px 3px 0px 0px rgba(86,161,80,1);
-
-  }
-
+      -webkit-box-shadow: 0px 3px 0px 0px rgba(86,161,80,1);
+      -moz-box-shadow: 0px 3px 0px 0px rgba(86,161,80,1);
+      box-shadow: 0px 3px 0px 0px rgba(86,161,80,1);
+    }
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
-@media screen and (min-width: 1200px) {
-
-   .container{
-
-    width: 960px;
-  }
-
-  .box-home-left{
-
-    width: 35%;
-  }
-
-
-
+@media screen and (min-width: 1200px){
+   
+.container{
+  width: 960px;
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-
-  .box-home-left{
-
-    width: 50%;
-  }
-
-  .box-home-right{
-
-    right: 7rem;
-    max-width: 30%;
-  }
-
+.box-home-left{
+  width: 35%;
+}
 }
 
 @media screen and (max-width: 1200px){
   
-   .donate{
-    
+.donate{
     background-image: url("../img/bg-donate.jpg");
-    
-  }
-
-  .other-ways-to-help{
-
-    padding-top: 10rem;
-  }
-
-  .transparency{
-
-    padding-top: 4rem;
-  }
-
 }
 
-@media screen and (max-width: 992px) {
+.other-ways-to-help{
+  padding-top: 10rem;
+}
 
-  nav{
+.transparency{
+  padding-top: 4rem;
+}
+}
 
-    font-size: 0.7em;
-  }
+@media screen and (min-width: 993px) and (max-width: 1200px){
 
-   #home{
+.box-home-left{
+  width: 50%;
+}
 
-   background-position: 50%;
- }
+.box-home-right{
+  right: 7rem;
+  max-width: 30%;
+}
+}
 
- .box-home-right{
 
+@media screen and (max-width: 992px){
+
+nav{
+  font-size: 0.7em;
+}
+
+#home{
+  background-position: 50%;
+}
+
+.box-home-right{
   bottom: 1.875em;
   right: 2rem;
   max-width: 35%;
- }
-
+}
 }
 @media screen and (max-width: 767px) {
 
-  .the-wccv-content, #what-we-do,#members,#donate,#contact{
-
+#members,#donate,#contact{
   padding-top: 1rem;
 }
 
-  .navbar-brand
-   {
-    position: absolute;
-    padding: 15px 15px;
-    width: 100%;
-    left: 30%;
-    top: 0;
-    text-align: center;
-    margin: auto;
-  }
+.navbar-brand{
+  position: absolute;
+  padding: 15px 15px;
+  width: 100%;
+  left: 40%;
+  top: 0;
+  text-align: center;
+  margin: auto;
+}
 
-  .not-visible{
-    display: none;
-  }
+.not-visible{
+  display: none;
+}
 
-  nav{
+nav{
+  background-color: rgba(255,255,255, 0.95);
+}
 
-    background-color: rgba(255,255,255, 0.95);
-  }
-
-  .icon-bar{
+.icon-bar{
   background-color: #fff;
- }
+}
 
-  .navbar-toggle{
-  
+.navbar-toggle{
   background-color: #1082ba;
   border: none;
   border-radius: 0px;
   float: left;
   margin-top: 0;
   margin-left: 1rem;
- }
+}
   
- .navbar-collapse{
-
+.navbar-collapse{
   border: none;
   box-shadow: none;
- }
+}
 
- #home{
+nav .navbar-nav{
+  margin-top: 2rem;
+  padding-top: 3rem;
+  background-color: #1082ba;
+  height: 80%;
+}
 
-   background-position: 20%;
- }
+  nav .navbar-nav li a{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 2em;
+  }
 
+.nav-fixed-left{
+  left: 0;
+  right: auto;
+  border: 0 1px 0 0;
+  position: fixed;
+  z-index: 1030;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  border-radius: 0;
+  width: 70%;
+}
 
- .box-home-left{
+#home{
+  background-position: 20%;
+}
 
- width: 100%;
-
+.box-home-left{
+  width: 100%;
 }
 
 .box-home-right{
-
-    color: #3c3c3c;
-    position: absolute;
-    bottom: 8em;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-  }
-
-.box-home-right .btn-donate{
-      
-      -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-      margin-left: 0;
-      text-align: center;
-
+  color: #3c3c3c;
+  position: absolute;
+  bottom: 8em;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
 }
 
-.box-home-right .btn-donate a{
+.btn-donate{
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  margin-left: 0;
+  text-align: center;
+}
 
-    font-size: 2em;
-
-  }
+.btn-donate a{
+  font-size: 2em;
+}
 
 .who-we-are-header{
-
   background-color:#7daf5e;
-  height: 100px;
+  height: 150px;
 }
 
-.the-wccv-content{
+.the-wccv{
   background-image: none;
   background-color: #7daf5e;
 }
 
- .the-wccv-content .row{
+  .the-wccv .row{
+    padding: 0 1rem;
+  }
 
-  padding: 0 1rem;
- }
+.where-we-are{
 
+  padding-bottom: 0;
+}
 
 .profile-photo{
-
   width: 30%;
   padding: 0.5em;
 }
@@ -1060,131 +930,111 @@ footer{
 }
 
 .where-we-are{
-
   background-position: 40%;
   font-size: 0.8em;
 }
 
 .box-where-we-are{
-
   padding-right: 0;
   padding-left: 0;
 }
 
 .box-table{
-
   display: block;
 }
 
- .slider{
+.slider{
   height: 600px;
- }
+}
 
- .profile .center-block{
-    
-    display: inline-block;
+.profile .center-block{
+  display: inline-block;
+}
 
- }
-
- .donate{
-  
+.donate{
   background-image: none;
   background-color: #7aac5b; 
   font-size: 0.8em;
-  
+}
+
+.title-label{
+  margin-left: 0;
+}
+
+.members .carousel{
+  padding-left: 2.5rem;
+}
+
+.donate-border-box{
+  border: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.donate-box{
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
  }
 
- .donate-border-box{
-    
-    border: none;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+.directly-donate-box .outlined-box{
+  margin-left: auto;
+  margin-right: auto;
+}
 
- }
-
- .donate-box{
-    
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-
- }
-
- .directly-donate-box .outlined-box{
-
-    margin-left: auto;
-    margin-right: auto;
- }
-
- .contact{
+.contact{
   font-size: 0.8em;
- }
+}
 
- .contact input[type="text"], input[type="email"]{
-
+  .contact input[type="text"], input[type="email"]{
     width: 100%;
- }
+  }
 
- .contact input[type="submit"]{
-
+  .contact input[type="submit"]{
     display: block;
     margin-left: auto;
     margin-right: auto;
- }
-  
-  footer{
-
-    font-size: 0.8em;
   }
-
+  
+footer{
+  font-size: 0.8em;
+}
 
 .carousel{
   display: block;
 }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px){
 
-  .navbar-brand
-   {
-
+.navbar-brand{
     left: 25%;
-  }
+}
 
-  .navbar-toggle{
-  
+.navbar-toggle{
   margin-left: 0;
-
  }
 
- #home{
-
+#home{
   height: 550px;
+}
 
- }
+.box-home-right{
+  bottom: 2em;
+}
 
- .box-home-right{
+.where-we-are h1{
+  font-size: 2em;
+}
 
-    bottom: 2em;
-
-  }
-
-  .where-we-are h1{
-
-    font-size: 2em;
-  }
-
-  .plans-box-white,.plans-box-blue{
-
-   padding: 1.25em 1em;
+.plans-box-white,.plans-box-blue{
+  padding: 1.25em 1em;
 }
 
 .footer-social img{
-
   width: 30%;
 }
-
 }
 
 
