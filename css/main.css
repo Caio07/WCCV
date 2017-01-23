@@ -161,25 +161,6 @@ nav{
        font-size: 1em;
      }
 
-        .navbar-nav li a:hover, nav .navbar-nav li a:active, nav .navbar-nav li a:focus, nav .navbar-nav li a:visited{
-            background: #fff;     
-        }
-
-        nav li.active a{
-          border-bottom: 3px solid #008ecf;
-        }
-
-        nav li.active a:after{
-          border-bottom: 6px solid #008ecf;
-          border-left: 6px solid transparent;
-          border-right: 6px solid transparent;
-          content: '';
-          display: inline-block;
-          left: 45%;
-          position: absolute;
-          top: 90%;
-        }      
-
 .navbar-brand{
     padding: 0.5rem 0;
 }
@@ -237,7 +218,7 @@ nav{
   background-color: #5fb158;
   border-bottom: 5px solid rgba(86,161,80,1);
   -webkit-clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
-  -moz-box-shadow: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -moz-clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
   margin-left: -13rem;
   padding: 0.7rem;
@@ -479,6 +460,10 @@ nav{
       background-color: #4373a3;
       border: 2px solid #4373a3;
     }
+
+.become-member-ribbon{
+  margin-left: -28em;
+}
 
 .profile-name{
   color: #0090d0;
@@ -757,6 +742,12 @@ footer{
 .box-home-left{
   width: 35%;
 }
+
+.box-data{
+
+  font-size: 0.8em;
+}
+
 }
 
 @media screen and (max-width: 1200px){
@@ -784,6 +775,19 @@ footer{
   right: 7rem;
   max-width: 30%;
 }
+
+.box-data {
+  font-size: 0.7em;
+}
+
+#faixa_become_member{
+  margin-right: 0;
+}
+
+.become-member-ribbon{
+  margin-left: 20em;
+}
+
 }
 
 
@@ -803,6 +807,28 @@ nav{
   max-width: 35%;
 }
 }
+
+@media screen and (min-width: 767px) {
+ .navbar-nav li a:hover, nav .navbar-nav li a:active, nav .navbar-nav li a:focus, nav .navbar-nav li a:visited{
+            background: #fff;     
+        }
+
+        nav li.active a{
+          border-bottom: 3px solid #008ecf;
+        }
+
+        nav li.active a:after{
+          border-bottom: 6px solid #008ecf;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          content: '';
+          display: inline-block;
+          left: 45%;
+          position: absolute;
+          top: 90%;
+        }      
+}
+
 @media screen and (max-width: 767px) {
 
 #members,#donate,#contact{
@@ -838,6 +864,7 @@ nav{
   float: left;
   margin-top: 0;
   margin-left: 1rem;
+  z-index: 9999;
 }
   
 .navbar-collapse{
@@ -845,23 +872,31 @@ nav{
   box-shadow: none;
 }
 
-nav .navbar-nav{
-  margin-top: 2rem;
+.navbar-nav{
+  margin-top: 0;
   padding-top: 3rem;
   background-color: #1082ba;
-  height: 80%;
+  height: 100%;
 }
 
-  nav .navbar-nav li a{
-    color: #ffffff;
-    font-weight: 300;
-    font-size: 2em;
-  }
+.navbar-nav li{
+  padding: 2.5em 1.5em;
+}
+
+  .navbar-nav li a{
+      color: #ffffff;
+      font-weight: 300;
+      font-size: 5em;
+    }
+
+   .navbar-nav li a:hover, nav .navbar-nav li a:active, nav .navbar-nav li a:focus, nav .navbar-nav li a:visited{
+              background-color: transparent;    
+          }
+
 
 .nav-fixed-left{
   left: 0;
   right: auto;
-  border: 0 1px 0 0;
   position: fixed;
   z-index: 1030;
   top: 0;
@@ -891,6 +926,7 @@ nav .navbar-nav{
 }
 
 .btn-donate{
+ -moz-clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   margin-left: 0;
@@ -961,10 +997,6 @@ nav .navbar-nav{
   margin-left: 0;
 }
 
-.members .carousel{
-  padding-left: 2.5rem;
-}
-
 .donate-border-box{
   border: none;
   width: 100%;
@@ -1006,7 +1038,22 @@ footer{
 }
 }
 
+@media screen and (max-height: : 400px) {
+
+  .navbar-nav li a{
+      font-size: 2em;
+    }
+
+  .navbar-nav li{
+      padding: 0;
+  }
+}
+
 @media screen and (max-width: 500px){
+
+#the-wccv, #what-we-do, #members, #donate{
+  padding-top: 1rem;
+}
 
 .navbar-brand{
     left: 25%;
@@ -1016,12 +1063,25 @@ footer{
   margin-left: 0;
  }
 
+   .navbar-nav li a{
+      font-size: 2.5em;
+    }
+
 #home{
   height: 550px;
 }
 
 .box-home-right{
   bottom: 2em;
+}
+
+.who-we-are-header{
+  height:150px;
+}
+
+.the-wccv .carousel {
+
+  height: 350px;
 }
 
 .where-we-are h1{
@@ -1032,11 +1092,77 @@ footer{
   padding: 1.25em 1em;
 }
 
+#faixa_what_we_do{
+  margin-top: -8rem;
+  margin-right: 3rem;
+}
+
+.what-we-do .intro-text-carousel{
+  height: 450px;
+  margin-top: 0;
+}
+
+.donate .carousel{
+  height: 750px;
+}
 .footer-social img{
   width: 30%;
 }
+
+@media screen and (max-width: 380px){
+
+.outlined-box-gray{
+  font-size: 1.7em;
+}
+.who-we-are-header{
+  height: 100px;
 }
 
+#faixa_who_we_are {
+
+  margin-top: -7rem;
+  margin-left: -7rem;
+}
+
+#the-wccv, #what-we-do, #members, #donate{
+  padding-top: 0;
+}
+
+.the-wccv .carousel, .what-we-do .intro-text-carousel{
+  height: auto;
+  padding-bottom: 2em;
+}
+
+.what-we-do .our-plans-carousel{
+  padding-bottom: 3em;
+}
+
+#faixa_what_we_do{
+  margin-top: -7rem;
+  margin-right: 2rem;
+}
+
+.outlined-box-gray{
+  padding: 0.625em 0.3em;
+}
+
+.donate .carousel{
+  height: 800px;
+}
+
+.donate header h1{
+  padding-right: 0.25em;
+  padding-left: 0.25em;
+}
+
+.contact{
+  font-size: 0.7em;
+}
+
+footer{
+  font-size: 0.6em;
+}
+}
 
 
 
