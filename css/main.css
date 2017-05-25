@@ -82,7 +82,8 @@ header{
 }
 
 #faixa_become_member{
-  margin-right: 15rem;
+  margin-right: -75rem;
+  margin-bottom: 1em;
 }
 
 #faixa_ways_to_help{
@@ -222,7 +223,7 @@ nav{
   clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
   margin-left: -13rem;
   padding: 0.7rem;
-  padding-right: 1rem;
+  padding-right: 3.75rem;
   text-align: right;
 }
      
