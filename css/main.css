@@ -932,6 +932,7 @@ nav{
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   margin-left: 0;
   text-align: center;
+  padding-right: 0;
 }
 
 .btn-donate a{
