@@ -221,6 +221,8 @@ nav{
   -webkit-clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
   -moz-clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: url("#clip-shape"); 
+  clip-path: url("#clip-shape");
   margin-left: -13rem;
   padding: 0.7rem;
   padding-right: 3.75rem;
@@ -927,7 +929,7 @@ nav{
 }
 
 .btn-donate{
- -moz-clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -moz-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   margin-left: 0;
